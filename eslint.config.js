@@ -17,12 +17,12 @@ export default tseslint.config(
     languageOptions: {
       ecmaVersion: 2020,
       globals: globals.browser,
-      arserOptions: {
+      parserOptions: {
         project: ['./tsconfig.node.json', './tsconfig.app.json'],
         tsconfigRootDir: import.meta.dirname,
       },
     },
-    settings: { react: { version: '18.3.1' } },
+    settings: { react: { version: '19.0.0' } },
     plugins: {
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
@@ -33,6 +33,13 @@ export default tseslint.config(
       'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
       ...react.configs.recommended.rules,
       ...react.configs['jsx-runtime'].rules,
+      'consistent-return': 'error',
+      curly: ['error', 'all'],
+      'no-unneeded-ternary': 'error',
+      'prefer-template': 'error',
+      'react/prop-types': 'off',
+      'react/jsx-curly-brace-presence': ['error', { props: 'never', children: 'never' }],
+      'react/jsx-fragments': ['error', 'syntax'],
     },
   },
 );
