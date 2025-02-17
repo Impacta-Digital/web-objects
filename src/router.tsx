@@ -7,7 +7,6 @@ const router = createBrowserRouter([
     path: '/EXC365GD1',
     element: <Outlet />,
     children: [
-      { path: EXC365GD.basic[1], element: <>{'PLACEHOLDER [Básico- Aula 1 Mãos a Obra]'}</> },
       { path: EXC365GD.basic[2], element: <>{'PLACEHOLDER [Básico- Aula 2 Mãos a Obra]'}</> },
       { path: EXC365GD.basic[3], element: <>{'PLACEHOLDER [Básico- Aula 3 Mãos a Obra]'}</> },
       { path: EXC365GD.basic[4], element: <>{'PLACEHOLDER [Básico- Aula 4 Mãos a Obra]'}</> },

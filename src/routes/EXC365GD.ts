@@ -2,7 +2,6 @@ export const baseUrl = 'https://web-objects-2p54r.ondigitalocean.app/' as const;
 
 export const path = {
   basic: {
-    1: '5a8506a7-7e42-490d-ab3b-729068d7ca74',
     2: 'e7145ae7-f875-4749-bb8c-bef03cc1479c',
     3: '5ea45007-6bf6-4ebf-bfbf-1327792d9355',
     4: 'e3604623-b310-494d-bf0f-d159f3ce35c0',
