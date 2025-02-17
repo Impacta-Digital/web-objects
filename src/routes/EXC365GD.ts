@@ -1,4 +1,4 @@
-export const baseUrl = 'https://web-objects-2p54r.ondigitalocean.app/' as const;
+export const baseUrl = 'https://web-objects-2p54r.ondigitalocean.app/';
 
 export const path = {
   basic: {
