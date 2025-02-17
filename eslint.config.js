@@ -40,6 +40,7 @@ export default tseslint.config(
       'react/prop-types': 'off',
       'react/jsx-curly-brace-presence': ['error', { props: 'never', children: 'never' }],
       'react/jsx-fragments': ['error', 'syntax'],
+      'no-unsafe-assignment': 'warn',
     },
   },
 );
