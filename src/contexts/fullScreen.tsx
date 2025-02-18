@@ -1,54 +1,59 @@
 import React, { createContext, useContext, useCallback, useMemo } from 'react';
+import fscreen from 'fscreen';
 import { useFullScreenHandle, FullScreenHandle } from 'react-full-screen';
 
 interface FullScreenContextValue {
-  isFullScreen: boolean;
-  enterFullScreen: () => Promise<void>;
-  exitFullScreen: () => Promise<void>;
-  toggleFullScreen: () => Promise<void>;
-  fullScreenHandle?: FullScreenHandle;
+  isFS: boolean;
+  enterFS: () => Promise<void>;
+  exitFS: () => Promise<void>;
+  toggleFS: () => Promise<void>;
+  fSHandle?: FullScreenHandle;
+  isFSEnabled: boolean;
 }
 
 const FullScreenContext = createContext<FullScreenContextValue>({
-  isFullScreen: false,
-  enterFullScreen: async () => {},
-  exitFullScreen: async () => {},
-  toggleFullScreen: async () => {},
-  fullScreenHandle: undefined,
+  isFS: false,
+  enterFS: async () => {},
+  exitFS: async () => {},
+  toggleFS: async () => {},
+  fSHandle: undefined,
+  isFSEnabled: false,
 });
 
 export const FullScreenProvider = ({ children }: { children: React.ReactNode }) => {
-  const fullScreenHandle = useFullScreenHandle();
+  const isFSEnabled = useMemo(() => fscreen.fullscreenEnabled, []);
+  const fSHandle = useFullScreenHandle();
 
-  const enterFullScreen = useCallback(async () => {
+  const enterFS = useCallback(async () => {
     try {
-      await fullScreenHandle.enter();
+      await fSHandle.enter();
     } catch (error) {
       console.error('Failed to enter fullscreen:', error);
     }
-  }, [fullScreenHandle]);
+  }, [fSHandle]);
 
-  const exitFullScreen = useCallback(async () => {
+  const exitFS = useCallback(async () => {
     try {
-      await fullScreenHandle.exit();
+      await fSHandle.exit();
     } catch (error) {
       console.error('Failed to exit fullscreen:', error);
     }
-  }, [fullScreenHandle]);
+  }, [fSHandle]);
 
-  const toggleFullScreen = useCallback(async () => {
-    fullScreenHandle.active ? await exitFullScreen() : await enterFullScreen();
-  }, [fullScreenHandle.active, enterFullScreen, exitFullScreen]);
+  const toggleFS = useCallback(async () => {
+    fSHandle.active ? await exitFS() : await enterFS();
+  }, [fSHandle.active, enterFS, exitFS]);
 
   const value = useMemo(
     () => ({
-      isFullScreen: fullScreenHandle.active,
-      enterFullScreen,
-      exitFullScreen,
-      toggleFullScreen,
-      fullScreenHandle,
+      isFS: fSHandle.active,
+      enterFS,
+      exitFS,
+      toggleFS,
+      fSHandle,
+      isFSEnabled,
     }),
-    [fullScreenHandle.active, enterFullScreen, exitFullScreen, toggleFullScreen, fullScreenHandle],
+    [fSHandle.active, enterFS, exitFS, toggleFS, fSHandle, isFSEnabled],
   );
 
   return <FullScreenContext.Provider value={value}>{children}</FullScreenContext.Provider>;
