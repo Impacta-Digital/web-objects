@@ -1,9 +1,8 @@
-import { FullScreenLayout } from '../../layouts/FullScreenLayout';
 import imageData from './assets/imageData.ts';
 
 function LabAdvanced04() {
   return (
-    <FullScreenLayout>
+    <>
       <h1>Advanced 4 Page</h1>
       <img src={imageData.LabAdvanced04[0]} alt='lab04_1' />
       <img src={imageData.LabAdvanced04[1]} alt='lab04_2' />
@@ -38,7 +37,7 @@ function LabAdvanced04() {
       <img src={imageData.LabAdvanced04[30]} alt='lab04_31' />
       <img src={imageData.LabAdvanced04[31]} alt='lab04_32' />
       <p>Content for Advanced 4 goes here.</p>
-    </FullScreenLayout>
+    </>
   );
 }
 

@@ -1,9 +1,8 @@
-import { FullScreenLayout } from '../../layouts/FullScreenLayout';
 import imageData from './assets/imageData.ts';
 
 function LabBasic04() {
   return (
-    <FullScreenLayout>
+    <>
       <h1>Basic 4 Page</h1>
       <img src={imageData.LabBasic04[0]} alt='img04_1' />
       <img src={imageData.LabBasic04[1]} alt='img04_2' />
@@ -17,7 +16,7 @@ function LabBasic04() {
       <img src={imageData.LabBasic04[9]} alt='lab04_3' />
       <img src={imageData.LabBasic04[10]} alt='lab04_4' />
       <p>Content for Basic 4 goes here.</p>
-    </FullScreenLayout>
+    </>
   );
 }
 

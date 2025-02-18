@@ -1,11 +1,12 @@
 import '../styles/_reset.css';
 import '../styles/_global.css';
 
+import { Outlet } from 'react-router-dom';
 import { FullScreen } from 'react-full-screen';
 import { useFullScreen } from '../contexts/fullScreen';
 import usePlatform from '../hooks/usePlatform';
 
-export const FullScreenLayout = ({ children }: { children: React.ReactNode }) => {
+export const FullScreenLayout = () => {
   const { isDesktopOrTablet } = usePlatform();
   const { toggleFullScreen, isFullScreen, fullScreenHandle } = useFullScreen();
 
@@ -16,7 +17,13 @@ export const FullScreenLayout = ({ children }: { children: React.ReactNode }) =>
           {isFullScreen ? 'Exit Fullscreen' : 'Enter Fullscreen'}
         </button>
       )}
-      {isDesktopOrTablet && fullScreenHandle ? <FullScreen handle={fullScreenHandle}>{children}</FullScreen> : children}
+      {isDesktopOrTablet && fullScreenHandle ? (
+        <FullScreen handle={fullScreenHandle}>
+          <Outlet />
+        </FullScreen>
+      ) : (
+        <Outlet />
+      )}
     </>
   );
 };
