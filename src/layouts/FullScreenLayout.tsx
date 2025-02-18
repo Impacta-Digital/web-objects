@@ -6,7 +6,7 @@ import { FullScreen } from 'react-full-screen';
 import { useFullScreen } from '../contexts/fullScreen';
 
 export const FullScreenLayout = () => {
-  const { isFSEnabled, toggleFS, isFS, fSHandle } = useFullScreen();
+  const { isFS, isFSEnabled, fSHandle, toggleFS } = useFullScreen();
 
   return (
     <>

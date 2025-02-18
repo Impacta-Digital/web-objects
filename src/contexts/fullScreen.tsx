@@ -1,23 +1,23 @@
 import React, { createContext, useContext, useCallback, useMemo } from 'react';
-import fscreen from 'fscreen';
 import { useFullScreenHandle, FullScreenHandle } from 'react-full-screen';
+import fscreen from 'fscreen';
 
 interface FullScreenContextValue {
   isFS: boolean;
+  isFSEnabled: boolean;
+  fSHandle?: FullScreenHandle;
   enterFS: () => Promise<void>;
   exitFS: () => Promise<void>;
   toggleFS: () => Promise<void>;
-  fSHandle?: FullScreenHandle;
-  isFSEnabled: boolean;
 }
 
 const FullScreenContext = createContext<FullScreenContextValue>({
   isFS: false,
+  isFSEnabled: false,
+  fSHandle: undefined,
   enterFS: async () => {},
   exitFS: async () => {},
   toggleFS: async () => {},
-  fSHandle: undefined,
-  isFSEnabled: false,
 });
 
 export const FullScreenProvider = ({ children }: { children: React.ReactNode }) => {
@@ -47,13 +47,13 @@ export const FullScreenProvider = ({ children }: { children: React.ReactNode }) 
   const value = useMemo(
     () => ({
       isFS: fSHandle.active,
+      isFSEnabled,
+      fSHandle,
       enterFS,
       exitFS,
       toggleFS,
-      fSHandle,
-      isFSEnabled,
     }),
-    [fSHandle.active, enterFS, exitFS, toggleFS, fSHandle, isFSEnabled],
+    [fSHandle.active, isFSEnabled, fSHandle, enterFS, exitFS, toggleFS],
   );
 
   return <FullScreenContext.Provider value={value}>{children}</FullScreenContext.Provider>;
