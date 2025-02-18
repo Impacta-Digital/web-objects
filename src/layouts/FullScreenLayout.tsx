@@ -1,3 +1,6 @@
+import '../styles/_reset.css';
+import '../styles/_global.css';
+
 import { FullScreen } from 'react-full-screen';
 import { useFullScreen } from '../contexts/fullScreen';
 import usePlatform from '../hooks/usePlatform';
