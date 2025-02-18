@@ -1,0 +1,37 @@
+/* - - - - - 📌 VARIABLES */
+
+:root {
+  /* fonts */
+  --default-font: 'Ubuntu', sans-serif;
+  --mono-font: 'Fira Code', 'Consolas', 'Monaco', monospace;
+
+  /* colors */
+  --theme: #c3eb1e;
+  --dark: #2e2e30; /* background */
+  --light: #f8f8f2; /* foreground */
+  --gray: #8f8f8f; /* disabled */
+  --blue-gray: #6272a4; /* accent */
+  --blue: #1e76eb; /* hyperlink */
+  --yellow: #fff600; /* highlight */
+  --green: #50fa7b;
+  --red: #ff5555;
+  --purple: #bd93f9;
+  --pink: #ff79c6;
+  --orange: #ffb86c;
+  --key-lime: #8be9fd;
+}
+
+/* - - - - - 📌 SETUP */
+
+html {
+  font-size: 16px;
+}
+
+body,
+.fullscreen {
+  background: var(--dark);
+  color: var(--light);
+  font-family: var(--default-font);
+  font-size: 1rem;
+  font-weight: 400;
+}
