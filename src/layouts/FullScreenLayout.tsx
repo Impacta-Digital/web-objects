@@ -16,7 +16,7 @@ export const FullScreenLayout = () => {
   return (
     <FullScreen handle={fSHandle}>
       <div className='layout-container'>
-        <div className='layout-button-container'>
+        <div className='layout-buttons-container'>
           {isFSEnabled && <ButtonToggleFS />}
           <ButtonToggleColorMode />
         </div>
