@@ -1,11 +1,11 @@
 /* - - - - - 📌 VARIABLES */
 
 :root {
-  /* fonts */
+  /* - - - - - fonts */
   --default-font: 'Ubuntu', sans-serif;
   --mono-font: 'Fira Code', 'Consolas', 'Monaco', monospace;
 
-  /* colors */
+  /* - - - - - colors */
   --theme: #c3eb1e;
   --dark: #2e2e30; /* background */
   --light: #f8f8f2; /* foreground */
@@ -19,6 +19,15 @@
   --pink: #ff79c6;
   --orange: #ffb86c;
   --key-lime: #8be9fd;
+  --off-white: #faf9f6; /* light background */
+
+  /* - - - - - color variations */
+  --theme--dark20: #9cbc18;
+  --theme--transp60: #c3eb1e66;
+  --blue-gray--light20: #818eb6;
+
+  /* - - - - -  other */
+  --soft-shadow: 1px 1px 2px #000;
 }
 
 /* - - - - - 📌 SETUP */
@@ -29,9 +38,132 @@ html {
 
 body,
 .fullscreen {
+  display: flex;
+  justify-content: center;
+  width: calc(100dvw - 1rem);
   background: var(--dark);
   color: var(--light);
   font-family: var(--default-font);
   font-size: 1rem;
   font-weight: 400;
+  line-height: 1.5;
+}
+
+body.--light-mode,
+.fullscreen.--light-mode {
+  background: var(--off-white);
+  color: var(--dark);
+}
+
+/* - - - - - 📌 LAYOUT */
+
+.layout-container {
+  width: 100%;
+  max-width: 60rem;
+  margin: 0 2rem;
+  padding: 2rem 0;
+}
+
+.layout-button-container {
+  display: flex;
+  gap: 0.75rem;
+  top: 1rem;
+  position: absolute;
+  right: 1rem;
+}
+
+.layout-button {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  background: var(--blue-gray);
+  box-shadow: var(--soft-shadow);
+  color: var(--light);
+}
+
+.image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.double-divider {
+  width: 100%;
+  height: 0.5rem;
+  border-bottom: 1px dashed var(--theme);
+  border-top: 1px solid var(--theme);
+  margin-bottom: 1rem;
+}
+
+.vertical-spacer--1 {
+  height: 1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* - - - - - 📌 TYPOGRAPHY */
+
+h1,
+h2,
+h3 {
+  margin-bottom: 1rem;
+  letter-spacing: 0.3pt;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+h1 {
+  color: var(--theme);
+  font-size: xx-large;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+h1.--light-mode {
+  color: var(--theme--dark20);
+}
+
+h2 {
+  font-size: x-large;
+}
+
+h3 {
+  font-size: larger;
+}
+
+p {
+  font-size: large;
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+.subheading {
+  text-transform: uppercase;
+  position: relative;
+  bottom: 1rem;
+  font-size: larger;
+  font-weight: 300;
+  margin-bottom: unset;
+}
+
+.text-highlight {
+  padding: 0 0.25rem;
+  background: var(--theme--transp60);
+}
+
+/* - - - - - 📌 @MEDIA */
+
+@media (hover: hover) and (pointer: fine) {
+  .layout-button:not(.--active):hover {
+    background: var(--blue-gray--light20);
+    transform: translateY(1px);
+    box-shadow: none;
+  }
 }
