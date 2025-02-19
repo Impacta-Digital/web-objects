@@ -5,23 +5,24 @@ import { Outlet } from 'react-router-dom';
 import { FullScreen } from 'react-full-screen';
 import { useFullScreen } from '../contexts/fullScreen';
 
+import { ButtonToggleColorMode } from '../components/ButtonToggleColorMode';
+import { ButtonToggleFS } from '../components/ButtonToggleFS';
+
 export const FullScreenLayout = () => {
-  const { isFS, isFSEnabled, fSHandle, toggleFS } = useFullScreen();
+  const { isFSEnabled, fSHandle } = useFullScreen();
+
+  if (!fSHandle) return null;
 
   return (
-    <>
-      {isFSEnabled && (
-        <button onClick={toggleFS} style={{ position: 'absolute', top: 10, right: 10, zIndex: 1000 }}>
-          {isFS ? 'Exit Fullscreen' : 'Enter Fullscreen'}
-        </button>
-      )}
-      {isFSEnabled && fSHandle ? (
-        <FullScreen handle={fSHandle}>
-          <Outlet />
-        </FullScreen>
-      ) : (
+    <FullScreen handle={fSHandle}>
+      <div className='layout-container'>
+        <div className='layout-button-container'>
+          {isFSEnabled && <ButtonToggleFS />}
+          <ButtonToggleColorMode />
+        </div>
+
         <Outlet />
-      )}
-    </>
+      </div>
+    </FullScreen>
   );
 };
