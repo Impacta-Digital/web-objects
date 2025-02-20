@@ -9,7 +9,7 @@ import { PlayerAndRevealButton } from '../../components/PlayerAndRevealButton.ts
 import { PageFooter } from '../../components/PageFooter.tsx';
 
 function LabBasic02() {
-  const customCard = (
+  const customHighlightContent = (
     <span>
       Para trocar rapidamente o tipo de referência de uma célula enquanto você digita uma fórmula, use a tecla{' '}
       <strong>F4</strong>.
@@ -36,7 +36,7 @@ function LabBasic02() {
         </span>
       </p>
 
-      <CardHighlight customContent={customCard} />
+      <CardHighlight customContent={customHighlightContent} />
 
       <p className='--bulleted'>
         Frequentemente, os bancos de dados do seu dashboard ficarão em planilhas diferentes ou mesmo em arquivos
@@ -83,7 +83,7 @@ function LabBasic02() {
       <TitleAndDivider title='Mãos à Obra!' subheading='Laboratórios' />
       <p>
         Estes exercícios complementam o aprendizado. Faça-os usando os conceitos aprendidos na aula Fórmulas e funções
-        avançadas. Cada exercício contém as instruções necessárias para você completar as activities, bem como menção
+        avançadas. Cada exercício contém as instruções necessárias para você completar as atividades, bem como menção
         aos arquivos que devem ser abertos, caso necessário. Baixe o material de apoio clicando no botão a seguir:
       </p>
 

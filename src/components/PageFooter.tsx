@@ -1,10 +1,8 @@
-import colors from '../constants/colors';
-
 export const PageFooter = ({ title, course }: PageFooterProps) => {
   return (
     <footer className='page-footer'>
       <div className='container'>
-        <div className='dashed-divider' style={{ borderColor: colors.light }}></div>
+        <div className='dashed-divider'></div>
 
         {/* - - - - - spacer */}
         <div className='vertical-spacer--sm' />

@@ -103,7 +103,7 @@ p.--left-align {
 
 strong {
   font-weight: 500;
-  text-decoration: underline 1px;
+  text-decoration: underline;
 }
 
 .subheading {
