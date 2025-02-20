@@ -1,6 +1,6 @@
 export const baseUrl = 'https://web-objects-2p54r.ondigitalocean.app/';
 
-export const path = {
+export const pageId = {
   basic: {
     2: 'e7145ae7-f875-4749-bb8c-bef03cc1479c',
     3: '5ea45007-6bf6-4ebf-bfbf-1327792d9355',

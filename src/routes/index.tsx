@@ -1,5 +1,5 @@
 import { createBrowserRouter, Outlet } from 'react-router-dom';
-import { path as EXC365GD } from './EXC365GD';
+import { pageId as EXC365GD } from './EXC365GD';
 
 import { FullScreenLayout } from '../layouts/FullScreenLayout';
 import { ErrorPage } from '../pages/ErrorPage';
