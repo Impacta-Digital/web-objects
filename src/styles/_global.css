@@ -138,8 +138,7 @@ img {
 .layout-container {
   width: 100%;
   max-width: 60rem;
-  margin: 0 2rem;
-  padding-top: 2rem;
+  padding: 2rem 2rem 0 2rem;
 }
 
 .layout-buttons-container {
@@ -252,13 +251,17 @@ img {
 /* mobile */
 
 @media (max-width: 767px) {
+  html {
+    font-size: 14px;
+  }
+
   body,
   .fullscreen {
     width: 100dvw;
   }
 
   .layout-container {
-    margin: 0 1rem;
+    padding: 1rem 1rem 0 1rem;
   }
 
   .layout-buttons-container {
