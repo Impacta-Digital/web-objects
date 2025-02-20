@@ -1,14 +1,25 @@
+import courseData from '../../data/EXC365GD/courseData.ts';
 import imageData from './assets/imageData.ts';
-import videoData from '../../videoData.ts';
+import videoData from '../../data/EXC365GD/videoData.ts';
+import downloadData from '../../data/EXC365GD/downloadData.ts';
 
-import { TitleAndDivider } from '../../components/TitleAndDivider.tsx';
 import { ImageContainer } from '../../components/ImageContainer.tsx';
-import { DownloadButton } from '../../components/DownloadButton';
 import { CardHighlight } from '../../components/CardHighlight.tsx';
-import { PlayerAndRevealButton } from '../../components/PlayerAndRevealButton.tsx';
 import { PageFooter } from '../../components/PageFooter.tsx';
 
+import { MainTitleAndIntro } from '../../components/page-blocks/MainTitleAndIntro.tsx';
+import { LabTitleAndDownloads } from '../../components/page-blocks/LabTitleAndDownload.tsx';
+import { ResTitleAndVideo } from '../../components/page-blocks/ResTitleAndVideo.tsx';
+
 function LabBasic02() {
+  const pageData = {
+    classTitle: 'Fórmulas e Funções Avançadas',
+    course: courseData.EXC365GD1,
+    images: imageData.LabBasic02,
+    videos: videoData.EXC365GD1.LabBasic02,
+    download: downloadData.EXC365GD1.LabBasic02,
+  };
+
   const customHighlightContent = (
     <span>
       Para trocar rapidamente o tipo de referência de uma célula enquanto você digita uma fórmula, use a tecla{' '}
@@ -18,14 +29,7 @@ function LabBasic02() {
 
   return (
     <>
-      <TitleAndDivider title='Mãos à Obra!' subheading='Fórmulas e Funções Avançadas' />
-      <p>
-        Antes de irmos para o laboratório, atente para os tópicos a seguir. Eles devem ser estudados com muita atenção,
-        pois representam os pontos mais importantes dessa aula.
-      </p>
-
-      {/* - - - - - spacer */}
-      <div className='vertical-spacer' />
+      <MainTitleAndIntro subheading={pageData.classTitle} />
 
       <h2>Fórmulas e funções avançadas</h2>
       <p className='--bulleted'>
@@ -56,7 +60,7 @@ function LabBasic02() {
         </span>
       </p>
 
-      <ImageContainer src={imageData.LabBasic02[0]} />
+      <ImageContainer src={pageData.images[0]} />
 
       <p className='--bulleted'>
         As funções matemáticas e estatísticas mais comuns no Excel e que trabalham com intervalos de células são:{' '}
@@ -76,21 +80,7 @@ function LabBasic02() {
         da localização de outro valor ou, então, por sua posição de linha e coluna dentro da matriz.
       </p>
 
-      {/* - - - - - spacer */}
-      <div className='vertical-spacer' />
-      <div className='vertical-spacer' />
-
-      <TitleAndDivider title='Mãos à Obra!' subheading='Laboratórios' />
-      <p>
-        Estes exercícios complementam o aprendizado. Faça-os usando os conceitos aprendidos na aula Fórmulas e funções
-        avançadas. Cada exercício contém as instruções necessárias para você completar as atividades, bem como menção
-        aos arquivos que devem ser abertos, caso necessário. Baixe o material de apoio clicando no botão a seguir:
-      </p>
-
-      <DownloadButton
-        filePath='/downloads/excel365-graficos-dashboards-basico_lab-aula2.zip'
-        buttonText='Material de Apoio'
-      />
+      <LabTitleAndDownloads classTitle={pageData.classTitle} downloadPath={pageData.download} />
 
       <h2>Laboratório 1</h2>
       <h3>A - Utilizando fórmulas e funções avançadas</h3>
@@ -100,7 +90,7 @@ function LabBasic02() {
         <strong>Vendas</strong>:
       </p>
 
-      <ImageContainer src={imageData.LabBasic02[1]} />
+      <ImageContainer src={pageData.images[1]} />
 
       <p>
         Um dos indicadores de um dashboard diz respeito aos melhores em cada período. Neste exercício, você deverá
@@ -108,12 +98,9 @@ function LabBasic02() {
         posições das três melhores vendas para o mês escolhido, bem como as regiões responsáveis por elas:
       </p>
 
-      <ImageContainer src={imageData.LabBasic02[2]} />
+      <ImageContainer src={pageData.images[2]} />
 
       <p>Para resolver este exercício, siga as orientações adiante:</p>
-      {/* - - - - - spacer */}
-      <div className='vertical-spacer--sm' />
-
       <p className='--left-align'>
         1. Use a lista de meses da coluna <strong>N</strong> para aplicar validação de dados por lista à célula{' '}
         <strong>D4</strong>;
@@ -123,7 +110,7 @@ function LabBasic02() {
         aparecem na base de dados:
       </p>
 
-      <ImageContainer src={imageData.LabBasic02[3]} />
+      <ImageContainer src={pageData.images[3]} />
 
       <p className='--left-align'>
         3. Calcule, na coluna <strong>H</strong>, a soma das vendas usando como critérios o nome da região ao lado
@@ -139,21 +126,11 @@ function LabBasic02() {
         região correspondente.
       </p>
 
-      {/* - - - - - spacer */}
-      <div className='vertical-spacer--sm' />
       <p>Quando você terminar, a planilha ficará assim:</p>
 
-      <ImageContainer src={imageData.LabBasic02[4]} />
+      <ImageContainer src={pageData.images[4]} />
 
-      {/* - - - - - spacer */}
-      <div className='vertical-spacer' />
-      <div className='vertical-spacer' />
-
-      <TitleAndDivider title='Mãos à Obra!' subheading='Resolução' />
-      <p>Quer conferir como resolvemos o exercício? Clique no botão abaixo e assista a resolução.</p>
-
-      <PlayerAndRevealButton videoId={videoData.EXC365GD1.LabBasic02.lab1} buttonText='Laboratório Resolvido' />
-
+      <ResTitleAndVideo labNum={1} videoId={pageData.videos[0]} />
       <PageFooter title='Mãos à Obra!' course='Excel 365 – Gráficos e Dashboards | Básico' />
     </>
   );
