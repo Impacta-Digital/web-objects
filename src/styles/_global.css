@@ -97,10 +97,6 @@ p.--bulleted::before {
   content: '⇢ ';
 }
 
-p.--left-align {
-  text-align: left;
-}
-
 strong {
   font-weight: 500;
   text-decoration: underline;
