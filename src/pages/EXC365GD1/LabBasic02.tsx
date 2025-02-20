@@ -11,8 +11,10 @@ import { MainTitleAndIntro } from '../../components/page-blocks/MainTitleAndIntr
 import { LabTitleAndDownloads } from '../../components/page-blocks/LabTitleAndDownload.tsx';
 import { ResTitleAndVideo } from '../../components/page-blocks/ResTitleAndVideo.tsx';
 
+import type PageData from '../../types/PageData.ts';
+
 function LabBasic02() {
-  const pageData = {
+  const pageData: PageData = {
     classTitle: 'Fórmulas e Funções Avançadas',
     course: courseData.EXC365GD1,
     images: imageData.LabBasic02,
@@ -31,7 +33,7 @@ function LabBasic02() {
     <>
       <MainTitleAndIntro subheading={pageData.classTitle} />
 
-      <h2>Fórmulas e funções avançadas</h2>
+      <h2>{pageData.classTitle}</h2>
       <p className='--bulleted'>
         A base para a montagem de fórmulas mais sofisticadas é o perfeito conhecimento de como os endereços de células e
         intervalos são referenciados.{' '}
@@ -130,8 +132,8 @@ function LabBasic02() {
 
       <ImageContainer src={pageData.images[4]} />
 
-      <ResTitleAndVideo labNum={1} videoId={pageData.videos[0]} />
-      <PageFooter title='Mãos à Obra!' course='Excel 365 – Gráficos e Dashboards | Básico' />
+      <ResTitleAndVideo labNum={1} videoId={pageData.videos![0]} />
+      <PageFooter title='Mãos à Obra!' course={pageData.course} />
     </>
   );
 }
