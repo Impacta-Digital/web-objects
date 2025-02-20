@@ -11,7 +11,8 @@ const colors = {
   purple: '#bd93f9',
   pink: '#ff79c6',
   orange: '#ffb86c',
-  keyLime: '#8be9fd',
+  keyLime: '#f1fa8c',
+  cyan: '#8be9fd',
 } as const;
 
 export default colors;

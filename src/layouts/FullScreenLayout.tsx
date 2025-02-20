@@ -20,7 +20,6 @@ export const FullScreenLayout = () => {
           {isFSEnabled && <ButtonToggleFS />}
           <ButtonToggleColorMode />
         </div>
-
         <Outlet />
       </div>
     </FullScreen>

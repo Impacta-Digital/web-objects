@@ -7,7 +7,7 @@ export const ButtonToggleFS = () => {
   const { isFS, toggleFS } = useFullScreen();
 
   return (
-    <div className='layout-button' onClick={toggleFS}>
+    <div className='button layout-button' onClick={toggleFS}>
       {isFS ? <IconCompress /> : <IconExpand />}
     </div>
   );
