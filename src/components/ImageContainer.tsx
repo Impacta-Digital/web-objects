@@ -1,3 +1,8 @@
+export interface ImageContainerProps {
+  src: string;
+  alt?: string;
+}
+
 export const ImageContainer = ({ src, alt }: ImageContainerProps) => {
   return (
     <div className='image-container'>
@@ -5,8 +10,3 @@ export const ImageContainer = ({ src, alt }: ImageContainerProps) => {
     </div>
   );
 };
-
-export interface ImageContainerProps {
-  src: string;
-  alt?: string;
-}

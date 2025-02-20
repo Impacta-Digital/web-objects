@@ -1,6 +1,11 @@
 import React from 'react';
 import { IconFolderDownload } from './icons/FolderDownload';
 
+export interface DownloadButtonProps {
+  filePath: string;
+  buttonText: string;
+}
+
 export const DownloadButton: React.FC<DownloadButtonProps> = ({ filePath, buttonText }) => {
   return (
     <div className='large-button-container'>
@@ -16,8 +21,3 @@ export const DownloadButton: React.FC<DownloadButtonProps> = ({ filePath, button
     </div>
   );
 };
-
-interface DownloadButtonProps {
-  filePath: string;
-  buttonText: string;
-}

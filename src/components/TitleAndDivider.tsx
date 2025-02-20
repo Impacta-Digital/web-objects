@@ -1,5 +1,10 @@
 import colors from '../constants/colors';
 
+export interface TitleAndDividerProps {
+  title: string;
+  subheading?: string;
+}
+
 export const TitleAndDivider = ({ title, subheading }: TitleAndDividerProps) => {
   return (
     <>
@@ -13,8 +18,3 @@ export const TitleAndDivider = ({ title, subheading }: TitleAndDividerProps) => 
     </>
   );
 };
-
-export interface TitleAndDividerProps {
-  title: string;
-  subheading?: string;
-}

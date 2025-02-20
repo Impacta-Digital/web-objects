@@ -1,3 +1,8 @@
+export interface PageFooterProps {
+  title: string;
+  course: string;
+}
+
 export const PageFooter = ({ title, course }: PageFooterProps) => {
   return (
     <footer className='page-footer'>
@@ -19,8 +24,3 @@ export const PageFooter = ({ title, course }: PageFooterProps) => {
     </footer>
   );
 };
-
-export interface PageFooterProps {
-  title: string;
-  course: string;
-}

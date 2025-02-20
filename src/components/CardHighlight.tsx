@@ -1,6 +1,11 @@
 import styles from './CardHighlight.module.css';
 import { IconExclamation } from './icons/Exclamation';
 
+export interface CardHighlightProps {
+  text?: string;
+  customContent?: React.ReactNode;
+}
+
 export const CardHighlight = ({ text, customContent }: CardHighlightProps) => {
   return (
     <div className={styles['container']}>
@@ -13,9 +18,4 @@ export const CardHighlight = ({ text, customContent }: CardHighlightProps) => {
       </div>
     </div>
   );
-};
-
-export type CardHighlightProps = {
-  text?: string;
-  customContent?: React.ReactNode;
 };

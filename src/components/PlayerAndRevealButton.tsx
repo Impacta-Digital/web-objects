@@ -1,7 +1,14 @@
-import React, { useState } from 'react';
 import styles from './PlayerAndRevealButton.module.css';
+
+import React, { useState } from 'react';
+
 import { IconChevronDown } from './icons/ChevronDown';
 import { IconChevronRight } from './icons/ChevronRight';
+
+export interface PlayerAndRevealButtonProps {
+  videoId: string;
+  buttonText: string;
+}
 
 export const PlayerAndRevealButton: React.FC<PlayerAndRevealButtonProps> = ({ videoId, buttonText }) => {
   const [showVideo, setShowVideo] = useState(false);
@@ -44,8 +51,3 @@ export const PlayerAndRevealButton: React.FC<PlayerAndRevealButtonProps> = ({ vi
     </div>
   );
 };
-
-interface PlayerAndRevealButtonProps {
-  videoId: string;
-  buttonText: string;
-}
