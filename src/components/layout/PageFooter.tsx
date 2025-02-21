@@ -8,20 +8,22 @@ export const PageFooter = ({ title, course }: PageFooterProps) => {
     <footer className='page-footer'>
       {/* - - - - - spacer */}
       <div className='vertical-spacer--sm' />
-      <div className='vertical-spacer--sm' />
 
       <div className='wrapper'>
         <div className='dashed-divider' />
+
+        {/* - - - - - spacer */}
         <div className='vertical-spacer--sm' />
+
         <p>
           <span className='title'>{title}</span> <span className='course'>{course}</span>
           <br />
           <span className='copyright'>© {new Date().getFullYear()} Impacta Digital</span>
         </p>
-      </div>
 
-      {/* - - - - - spacer */}
-      <div className='vertical-spacer' />
+        {/* - - - - - spacer */}
+        <div className='vertical-spacer' />
+      </div>
     </footer>
   );
 };

@@ -1,12 +1,11 @@
-import React from 'react';
-import { IconFolderDownload } from './icons/FolderDownload';
+import { IconFolderDownload } from '../icons/FolderDownload';
 
 export interface DownloadButtonProps {
   filePath: string;
   buttonText: string;
 }
 
-export const DownloadButton: React.FC<DownloadButtonProps> = ({ filePath, buttonText }) => {
+export const DownloadButton = ({ filePath, buttonText }: DownloadButtonProps) => {
   return (
     <div className='large-button-container'>
       <a href={filePath} download>

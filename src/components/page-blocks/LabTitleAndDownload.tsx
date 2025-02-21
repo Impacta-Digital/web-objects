@@ -1,5 +1,5 @@
-import { TitleAndDivider } from '../TitleAndDivider';
-import { DownloadButton } from '../DownloadButton';
+import { TitleAndDivider } from '../layout/TitleAndDivider';
+import { DownloadButton } from '../layout/DownloadButton';
 
 export interface LabTitleAndDownloadsProps {
   classTitle: string;

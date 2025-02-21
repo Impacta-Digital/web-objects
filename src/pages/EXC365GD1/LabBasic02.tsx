@@ -3,9 +3,9 @@ import imageData from './assets/imageData.ts';
 import videoData from '../../data/EXC365GD/videoData.ts';
 import downloadData from '../../data/EXC365GD/downloadData.ts';
 
-import { ImageContainer } from '../../components/ImageContainer.tsx';
-import { CardHighlight } from '../../components/CardHighlight.tsx';
-import { PageFooter } from '../../components/PageFooter.tsx';
+import { ImageContainer } from '../../components/layout/ImageContainer.tsx';
+import { CardHighlight } from '../../components/content/CardHighlight.tsx';
+import { PageFooter } from '../../components/layout/PageFooter.tsx';
 
 import { MainTitleAndIntro } from '../../components/page-blocks/MainTitleAndIntro.tsx';
 import { LabTitleAndDownloads } from '../../components/page-blocks/LabTitleAndDownload.tsx';

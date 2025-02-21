@@ -1,4 +1,4 @@
-import { TitleAndDivider } from '../TitleAndDivider';
+import { TitleAndDivider } from '../layout/TitleAndDivider';
 
 export interface MainTitleAndIntroProps {
   subheading: string;

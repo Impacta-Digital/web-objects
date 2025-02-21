@@ -1,16 +1,16 @@
 import styles from './PlayerAndRevealButton.module.css';
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-import { IconChevronDown } from './icons/ChevronDown';
-import { IconChevronRight } from './icons/ChevronRight';
+import { IconChevronDown } from '../icons/ChevronDown';
+import { IconChevronRight } from '../icons/ChevronRight';
 
 export interface PlayerAndRevealButtonProps {
   videoId: string;
   buttonText: string;
 }
 
-export const PlayerAndRevealButton: React.FC<PlayerAndRevealButtonProps> = ({ videoId, buttonText }) => {
+export const PlayerAndRevealButton = ({ videoId, buttonText }: PlayerAndRevealButtonProps) => {
   const [showVideo, setShowVideo] = useState(false);
 
   return (

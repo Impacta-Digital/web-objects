@@ -1,7 +1,7 @@
-import { useFullScreen } from '../contexts/fullScreen';
+import { useFullScreen } from '../../contexts/fullScreen';
 
-import { IconExpand } from './icons/Expand';
-import { IconCompress } from './icons/Compress';
+import { IconExpand } from '../../components/icons/Expand';
+import { IconCompress } from '../../components/icons/Compress';
 
 export const ButtonToggleFS = () => {
   const { isFS, toggleFS } = useFullScreen();

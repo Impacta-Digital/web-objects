@@ -1,4 +1,4 @@
-import { IconLightbulb } from './icons/Lightbulb';
+import { IconLightbulb } from '../../components/icons/Lightbulb';
 
 export const ButtonToggleColorMode = () => {
   const toggleColorMode = () => {

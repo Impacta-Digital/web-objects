@@ -1,5 +1,7 @@
 import styles from './CardHighlight.module.css';
-import { IconExclamation } from './icons/Exclamation';
+import { IconExclamation } from '../icons/Exclamation';
+import { makeTransparent } from '../../utils/colorUtils';
+import colors from '../../constants/colors';
 
 export interface CardHighlightProps {
   text?: string;
@@ -7,9 +9,11 @@ export interface CardHighlightProps {
 }
 
 export const CardHighlight = ({ text, customContent }: CardHighlightProps) => {
+  const background = makeTransparent(colors.orange, 80);
+
   return (
     <div className={styles['container']}>
-      <div className={styles['card']}>
+      <div className={styles['card']} style={{ background }}>
         <div className={styles['icon']}>
           <IconExclamation />
         </div>
