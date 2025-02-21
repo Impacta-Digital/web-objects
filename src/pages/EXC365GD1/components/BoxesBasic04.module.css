@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.color-box {
+  padding: 1rem;
+  border: 0.25rem solid;
+  box-shadow: var(--soft-shadow);
+}
+
+.color-box p {
+  font-size: medium;
+  margin-bottom: unset;
+}
+
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+  }
+}
