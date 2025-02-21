@@ -9,7 +9,7 @@ import { PageFooter } from '../../components/PageFooter.tsx';
 
 import { MainTitleAndIntro } from '../../components/page-blocks/MainTitleAndIntro.tsx';
 import { LabTitleAndDownloads } from '../../components/page-blocks/LabTitleAndDownload.tsx';
-import { ResTitleAndVideo } from '../../components/page-blocks/ResTitleAndVideo.tsx';
+import { ViewResponseButton } from '../../components/page-blocks/ViewResponseButton.tsx';
 
 import type PageData from '../../types/PageData.ts';
 
@@ -84,8 +84,7 @@ function LabBasic02() {
 
       <LabTitleAndDownloads classTitle={pageData.classTitle} downloadPath={pageData.download} />
 
-      <h2>Laboratório 1</h2>
-      <h3>A - Utilizando fórmulas e funções avançadas</h3>
+      <h2>Laboratório – Utilizando fórmulas e funções avançadas</h2>
       <p>
         Para este exercício, abra o arquivo <strong>Exercícios de Laboratório - Aula 2.xlsx</strong>, no qual há apenas
         uma planilha. Você verá um banco de dados, contendo o <strong>Mês</strong>, a <strong>Região</strong> e as{' '}
@@ -132,7 +131,8 @@ function LabBasic02() {
 
       <ImageContainer src={pageData.images[4]} />
 
-      <ResTitleAndVideo labNum={1} videoId={pageData.videos![0]} />
+      <ViewResponseButton videoId={pageData.videos![0]} />
+
       <PageFooter title='Mãos à Obra!' course={pageData.course} />
     </>
   );

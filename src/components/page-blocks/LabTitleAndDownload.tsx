@@ -23,6 +23,10 @@ export const LabTitleAndDownloads = (props: LabTitleAndDownloadsProps) => {
       </p>
 
       <DownloadButton filePath={downloadPath} buttonText='Material de Apoio' />
+
+      {/* - - - - - spacer */}
+      <div className='vertical-spacer' />
+      <div className='vertical-spacer' />
     </>
   );
 };

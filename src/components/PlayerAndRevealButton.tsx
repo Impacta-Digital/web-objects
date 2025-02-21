@@ -46,7 +46,6 @@ export const PlayerAndRevealButton: React.FC<PlayerAndRevealButtonProps> = ({ vi
 
         {/* - - - - - spacer */}
         <div className='vertical-spacer' />
-        <div className='vertical-spacer' />
       </div>
     </div>
   );
