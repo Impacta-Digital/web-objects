@@ -236,6 +236,10 @@ img {
   height: 0.5rem;
 }
 
+.--padding-left {
+  padding-left: 1.5rem;
+}
+
 /* - - - - - 📌 @MEDIA */
 
 @media (hover: hover) and (pointer: fine) {
