@@ -5,13 +5,13 @@ import downloadData from '../../data/EXC365GD/downloadData.ts';
 
 import { ImageContainer } from '../../components/layout/ImageContainer.tsx';
 import { PageFooter } from '../../components/layout/PageFooter.tsx';
-
 import { MainTitleAndIntro } from '../../components/page-blocks/MainTitleAndIntro.tsx';
 import { LabTitleAndDownload } from '../../components/page-blocks/LabTitleAndDownload.tsx';
 import { ViewResponseButton } from '../../components/page-blocks/ViewResponseButton.tsx';
 
-import type PageData from '../../types/PageData.ts';
 import { BoxesBasic04 } from './components/BoxesBasic04.tsx';
+
+import type PageData from '../../types/PageData.ts';
 
 function LabBasic04() {
   const pageData: PageData = {
