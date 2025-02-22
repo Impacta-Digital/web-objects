@@ -1,0 +1,10 @@
+.color-box {
+  padding: 1rem;
+  border: 0.25rem solid;
+  box-shadow: var(--soft-shadow);
+}
+
+.color-box p {
+  font-size: medium;
+  margin-bottom: unset;
+}

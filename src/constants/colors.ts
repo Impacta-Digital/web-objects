@@ -16,4 +16,3 @@ const colors = {
 } as const;
 
 export default colors;
-export type Color = keyof typeof colors;
