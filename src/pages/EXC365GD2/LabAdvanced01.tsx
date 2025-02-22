@@ -8,9 +8,9 @@ import { PageFooter } from '../../components/layout/PageFooter.tsx';
 import { MainTitleAndIntro } from '../../components/page-blocks/MainTitleAndIntro.tsx';
 import { LabTitleAndDownload } from '../../components/page-blocks/LabTitleAndDownload.tsx';
 import { ViewResponseButton } from '../../components/page-blocks/ViewResponseButton.tsx';
+import { BoxesAdvanced01 } from './components/BoxesAdvanced01.tsx';
 
 import type PageData from '../../types/PageData.ts';
-import { BoxesAdvanced01 } from './components/BoxesAdvanced01.tsx';
 
 function LabAdvanced01() {
   const pageData: PageData = {
@@ -42,7 +42,7 @@ function LabAdvanced01() {
         representando os valores da tabela:
       </p>
 
-      <ImageContainer src={imageData.LabAdvanced01[0]} />
+      <ImageContainer src={pageData.images[0]} />
 
       <p>Nessa planilha, realize as seguintes atividades:</p>
 
@@ -94,7 +94,7 @@ function LabAdvanced01() {
         No final, a <strong>Planilha1</strong> deverá estar parecida com a imagem a seguir:
       </p>
 
-      <ImageContainer src={imageData.LabAdvanced01[1]} />
+      <ImageContainer src={pageData.images[1]} />
 
       <ViewResponseButton videoId={pageData.videos![0]} />
 
@@ -111,7 +111,7 @@ function LabAdvanced01() {
         média:
       </p>
 
-      <ImageContainer src={imageData.LabAdvanced01[2]} />
+      <ImageContainer src={pageData.images[2]} />
 
       <p>Siga os passos adiante para completar a atividade:</p>
 
@@ -148,7 +148,7 @@ function LabAdvanced01() {
       </p>
       <p className='--padding-left'>10. Salve o arquivo.</p>
 
-      <ImageContainer src={imageData.LabAdvanced01[3]} />
+      <ImageContainer src={pageData.images[3]} />
 
       <p className='--padding-left'>
         10. Crie uma fórmula nomeada chamada de <strong>Média</strong> que checa o valor da célula <strong>R2</strong>.
@@ -182,11 +182,11 @@ function LabAdvanced01() {
 
       <p>Após as atividades, a planilha deverá estar da seguinte forma quando a caixa de seleção estiver desativada:</p>
 
-      <ImageContainer src={imageData.LabAdvanced01[4]} />
+      <ImageContainer src={pageData.images[4]} />
 
       <p>A planilha deverá estar assim, quando a caixa de seleção estiver ativada:</p>
 
-      <ImageContainer src={imageData.LabAdvanced01[5]} />
+      <ImageContainer src={pageData.images[5]} />
 
       <ViewResponseButton videoId={pageData.videos![1]} />
 

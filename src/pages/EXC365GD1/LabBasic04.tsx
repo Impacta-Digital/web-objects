@@ -36,8 +36,8 @@ function LabBasic04() {
         quais mostram blocos ou fatias proporcionais aos valores vindos dos intervalos da planilha;
       </p>
 
-      <ImageContainer src={imageData.LabBasic04[0]} />
-      <ImageContainer src={imageData.LabBasic04[1]} />
+      <ImageContainer src={pageData.images[0]} />
+      <ImageContainer src={pageData.images[1]} />
 
       <p className='--bulleted'>
         Há gráficos específicos para distribuição de valores para cálculos estatísticos, pesquisas de mercado ou
@@ -45,23 +45,23 @@ function LabBasic04() {
         <span className='--highlight'>histograma, gráfico de Pareto e gráfico de caixa estreita</span>;
       </p>
 
-      <ImageContainer src={imageData.LabBasic04[2]} />
-      <ImageContainer src={imageData.LabBasic04[3]} />
-      <ImageContainer src={imageData.LabBasic04[4]} />
+      <ImageContainer src={pageData.images[2]} />
+      <ImageContainer src={pageData.images[3]} />
+      <ImageContainer src={pageData.images[4]} />
 
       <p className='--bulleted'>
         O <span className='--highlight'>gráfico de funil</span> mostra contagens de valores em etapas de um processo, em
         ordem decrescente;
       </p>
 
-      <ImageContainer src={imageData.LabBasic04[5]} />
+      <ImageContainer src={pageData.images[5]} />
 
       <p className='--bulleted'>
         É possível usar mapas como gráficos e destacar países, estados e regiões, em função dos valores da planilha. São
         os <span className='--highlight'>mapas coropléticos</span>.
       </p>
 
-      <ImageContainer src={imageData.LabBasic04[6]} />
+      <ImageContainer src={pageData.images[6]} />
 
       <LabTitleAndDownload classTitle={pageData.classTitle} downloadPath={pageData.download} />
 
@@ -72,7 +72,7 @@ function LabBasic04() {
         <strong>Seguros</strong>:
       </p>
 
-      <ImageContainer src={imageData.LabBasic04[7]} />
+      <ImageContainer src={pageData.images[7]} />
 
       <p>
         Os dados da tabela representam valores registrados por um corretor de seguros ao longo dos 12 meses do ano,
@@ -140,7 +140,7 @@ function LabBasic04() {
 
       <p>No final do exercício, seu gráfico se parecerá com este:</p>
 
-      <ImageContainer src={imageData.LabBasic04[8]} />
+      <ImageContainer src={pageData.images[8]} />
 
       <ViewResponseButton videoId={pageData.videos![0]} />
 
@@ -151,7 +151,7 @@ function LabBasic04() {
         <strong>Temp</strong>:
       </p>
 
-      <ImageContainer src={imageData.LabBasic04[9]} />
+      <ImageContainer src={pageData.images[9]} />
 
       <p>Faça as seguintes tarefas nesta planilha:</p>
       <p className='--padding-left'>
@@ -188,7 +188,7 @@ function LabBasic04() {
 
       <p>No final, sua planilha deve ficar semelhante a esta:</p>
 
-      <ImageContainer src={imageData.LabBasic04[10]} />
+      <ImageContainer src={pageData.images[10]} />
 
       <ViewResponseButton videoId={pageData.videos![1]} />
 
