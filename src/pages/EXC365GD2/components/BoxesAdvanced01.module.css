@@ -1,19 +1,23 @@
-.outer-container {
-  width: 100%;
-  display: flex;
-  gap: 1.5rem;
-  margin-bottom: 1.5rem;
+.boxes-grid {
+  display: grid;
+  grid-template-columns: 65% 1fr;
+  gap: 1rem;
 }
 
-.inner-container {
-  min-width: 65%;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+.boxes-grid > *:nth-child(2) {
+  grid-row: span 2;
 }
 
 @media (max-width: 767px) {
-  .outer-container {
-    flex-direction: column;
+  .boxes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .boxes-grid > *:nth-child(2) {
+    order: 2;
+  }
+
+  .boxes-grid > *:nth-child(3) {
+    order: 1;
   }
 }
