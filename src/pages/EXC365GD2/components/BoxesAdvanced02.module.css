@@ -1,0 +1,16 @@
+.boxes-grid {
+  display: grid;
+  grid-template-columns: 1fr 60%;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.boxes-grid > *:first-child {
+  grid-column: span 2;
+}
+
+@media (max-width: 767px) {
+  .boxes-grid {
+    grid-template-columns: 1fr;
+  }
+}
