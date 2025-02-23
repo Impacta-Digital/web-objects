@@ -24,12 +24,15 @@
   /* - - - - - color variations */
   --theme--dark20: #9cbc18;
   --theme--light40: #dbf378;
-  --theme--transp60: #c3eb1e66;
+  --theme--opacity40: #c3eb1e66;
+
   --blue-gray--dark20: #4e5b83;
   --blue-gray--light20: #818eb6;
 
+  --black--opacity30: #0000004d;
+
   /* - - - - -  other */
-  --soft-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  --soft-shadow: 2px 2px 2px var(--black--opacity30);
 }
 
 /* - - - - - 📌 SETUP */
@@ -98,11 +101,6 @@ p.--bulleted::before {
   content: '⇢ ';
 }
 
-strong {
-  font-weight: 500;
-  text-decoration: underline;
-}
-
 .subheading {
   text-transform: uppercase;
   position: relative;
@@ -113,7 +111,7 @@ strong {
 }
 
 .--highlight {
-  background: var(--theme--transp60);
+  background: var(--theme--opacity40);
 }
 
 /* - - - - - 📌 LAYOUT */

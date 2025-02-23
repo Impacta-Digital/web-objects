@@ -3,16 +3,16 @@ import { makeTransparent } from '../../utils/colorUtils';
 
 export interface ColorBoxProps {
   color: string;
-  paragraph: React.ReactNode;
+  content: React.ReactNode;
 }
 
-export const ColorBox = ({ color, paragraph }: ColorBoxProps) => {
+export const ColorBox = ({ color, content }: ColorBoxProps) => {
   const background = makeTransparent(color, 90);
   const borderColor = makeTransparent(color, 25);
 
   return (
     <div className={styles['color-box']} style={{ background, borderColor }}>
-      <p className='--bulleted'>{paragraph}</p>
+      {content}
     </div>
   );
 };

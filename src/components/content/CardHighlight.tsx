@@ -18,7 +18,7 @@ export const CardHighlight = ({ text, customContent }: CardHighlightProps) => {
           <IconExclamation />
         </div>
 
-        <div className={styles['body']}>{text || customContent}</div>
+        <div className={styles['content']}>{text || customContent}</div>
       </div>
     </div>
   );
