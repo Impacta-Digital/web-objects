@@ -1,6 +1,6 @@
 .boxes-grid {
   display: grid;
-  grid-template-columns: 65% 1fr;
+  grid-template-columns: 70% 1fr;
   gap: 1rem;
 }
 
@@ -15,6 +15,7 @@
 
   .boxes-grid > *:nth-child(2) {
     order: 2;
+    grid-row: unset;
   }
 
   .boxes-grid > *:nth-child(3) {

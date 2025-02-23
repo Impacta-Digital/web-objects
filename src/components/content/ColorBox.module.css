@@ -4,7 +4,16 @@
   box-shadow: var(--soft-shadow);
 }
 
+.color-box strong {
+  font-weight: 500;
+  text-decoration: underline 1px;
+}
+
 .color-box p {
   font-size: medium;
+  text-align: left;
+}
+
+.color-box p:last-of-type {
   margin-bottom: unset;
 }

@@ -4,12 +4,12 @@ import videoData from '../../data/EXC365GD/videoData.ts';
 import downloadData from '../../data/EXC365GD/downloadData.ts';
 
 import { ImageContainer } from '../../components/layout/ImageContainer.tsx';
-import { CardHighlight } from '../../components/content/CardHighlight.tsx';
 import { PageFooter } from '../../components/layout/PageFooter.tsx';
 
 import { MainTitleAndIntro } from '../../components/page-blocks/MainTitleAndIntro.tsx';
 import { LabTitleAndDownload } from '../../components/page-blocks/LabTitleAndDownload.tsx';
 import { ViewResponseButton } from '../../components/page-blocks/ViewResponseButton.tsx';
+import { BoxBasic02 } from './components/BoxBasic02.tsx';
 
 import type PageData from '../../types/PageData.ts';
 
@@ -22,17 +22,12 @@ function LabBasic02() {
     download: downloadData.EXC365GD1.LabBasic02,
   };
 
-  const customHighlightContent = (
-    <span>
-      Para trocar rapidamente o tipo de referência de uma célula enquanto você digita uma fórmula, use a tecla{' '}
-      <strong>F4</strong>.
-    </span>
-  );
-
   return (
     <>
       <MainTitleAndIntro subheading={pageData.classTitle} />
+
       <h2>{pageData.classTitle}</h2>
+
       <p className='--bulleted'>
         A base para a montagem de fórmulas mais sofisticadas é o perfeito conhecimento de como os endereços de células e
         intervalos são referenciados.{' '}
@@ -40,7 +35,9 @@ function LabBasic02() {
           O Excel trabalha com os seguintes tipos de endereço: absoluto ($A$1), relativo (A1) e misto ($A$1, A$1);
         </span>
       </p>
-      <CardHighlight customContent={customHighlightContent} />
+
+      <BoxBasic02 />
+
       <p className='--bulleted'>
         Frequentemente, os bancos de dados do seu dashboard ficarão em planilhas diferentes ou mesmo em arquivos
         diferentes. A montagem das fórmulas pode seguir o mesmo princípio da facilidade: aponte para os endereços
@@ -58,7 +55,9 @@ function LabBasic02() {
           Gerenciador de Nomes (acionado pela guia Fórmulas ou pelo atalho CTRL + F3);
         </span>
       </p>
+
       <ImageContainer src={pageData.images[0]} />
+
       <p className='--bulleted'>
         As funções matemáticas e estatísticas mais comuns no Excel e que trabalham com intervalos de células são:{' '}
         <span className='--highlight'>
@@ -76,24 +75,33 @@ function LabBasic02() {
         Uma função que pertence à categoria de procura e referência retorna um valor de uma tabela ou matriz, por meio
         da localização de outro valor ou, então, por sua posição de linha e coluna dentro da matriz.
       </p>
+
       <LabTitleAndDownload classTitle={pageData.classTitle} downloadPath={pageData.download} />
+
       <h2>Laboratório – Utilizando fórmulas e funções avançadas</h2>
+
       <p>
         Para este exercício, abra o arquivo <strong>Exercícios de Laboratório - Aula 2.xlsx</strong>, no qual há apenas
         uma planilha.
-      </p>{' '}
+      </p>
+
       <p>
         Você verá um banco de dados, contendo o <strong>Mês</strong>, a <strong>Região</strong> e as{' '}
         <strong>Vendas</strong>:
       </p>
+
       <ImageContainer src={pageData.images[1]} />
+
       <p>
         Um dos indicadores de um dashboard diz respeito aos melhores em cada período. Neste exercício, você deverá
         escolher um mês na célula <strong>D4</strong> e, em seguida, a tabela abaixo de <strong>D4</strong> mostrará as
         posições das três melhores vendas para o mês escolhido, bem como as regiões responsáveis por elas:
       </p>
+
       <ImageContainer src={pageData.images[2]} />
+
       <p>Para resolver este exercício, siga as orientações adiante:</p>
+
       <p className='--padding-left'>
         1. Use a lista de meses da coluna <strong>N</strong> para aplicar validação de dados por lista à célula{' '}
         <strong>D4</strong>;
@@ -102,7 +110,9 @@ function LabBasic02() {
         2. A tabela nas colunas <strong>G</strong> e <strong>H</strong> possui a relação de todas as regiões que
         aparecem na base de dados:
       </p>
+
       <ImageContainer src={pageData.images[3]} />
+
       <p className='--padding-left'>
         3. Calcule, na coluna <strong>H</strong>, a soma das vendas usando como critérios o nome da região ao lado
         esquerdo e o mês escolhido em <strong>D4</strong>;
@@ -116,9 +126,13 @@ function LabBasic02() {
         5. Finalmente, na coluna <strong>C</strong>, localize cada valor de vendas na tabela de vendas mensais e traga a
         região correspondente.
       </p>
+
       <p>Quando você terminar, a planilha ficará assim:</p>
+
       <ImageContainer src={pageData.images[4]} />
+
       <ViewResponseButton videoId={pageData.videos![0]} />
+
       <PageFooter title='Mãos à Obra!' course={pageData.course} />
     </>
   );

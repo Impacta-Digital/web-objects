@@ -11,7 +11,7 @@ import { LabTitleAndDownload } from '../../components/page-blocks/LabTitleAndDow
 import { ViewResponseButton } from '../../components/page-blocks/ViewResponseButton.tsx';
 
 import type PageData from '../../types/PageData.ts';
-import { GridBasic03 } from './components/GridBasic03.tsx';
+import { BoxesBasic03 } from './components/BoxesBasic03.tsx';
 
 function LabBasic03() {
   const pageData: PageData = {
@@ -59,7 +59,7 @@ function LabBasic03() {
 
       <ImageContainer src={pageData.images[1]} />
 
-      <GridBasic03 />
+      <BoxesBasic03 />
 
       <LabTitleAndDownload classTitle={pageData.classTitle} downloadPath={pageData.download} />
 

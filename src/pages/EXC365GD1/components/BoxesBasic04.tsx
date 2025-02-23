@@ -5,13 +5,13 @@ import { ColorBox } from '../../../components/content/ColorBox';
 export const BoxesBasic04 = () => {
   const boxColors = [colors.purple, colors.cyan];
   const paragraphs = [
-    <p className='--bulleted'>
+    <p>
       Há situações no dashboard em que um gráfico ocuparia muito espaço. Nesses casos, você poderá criar gráficos dentro
       de células: <strong>mini-gráficos</strong>,{' '}
       <strong>formatação condicional com barras de dados ou escalas de cores</strong>, e{' '}
       <strong>gráficos usando repetição de caracteres</strong>;
     </p>,
-    <p className='--bulleted'>
+    <p>
       Quando uma série de dados representa valores muito pequenos e outra série valores muito grandes, dificilmente os
       valores pequenos poderão ser vistos no gráfico. Nesse caso, a melhor abordagem é fazer com que essa série exiba
       seus valores em outro eixo vertical, chamado <strong>eixo secundário</strong>. Dessa maneira, é possível
