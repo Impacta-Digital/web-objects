@@ -28,6 +28,7 @@
 
   --blue-gray--dark20: #4e5b83;
   --blue-gray--light20: #818eb6;
+  --blue-gray--opacity30: #6273a44d;
 
   --black--opacity30: #0000004d;
 
@@ -81,14 +82,16 @@ h1 {
 }
 
 h2 {
+  width: fit-content;
   font-size: x-large;
-  text-decoration: underline var(--theme) 1px;
+  border-bottom: 1px dashed var(--theme);
 }
 
 h3 {
   width: fit-content;
-  margin-bottom: 0;
   font-size: 1.4rem;
+  border-bottom: double;
+  padding-top: 1rem;
 }
 
 p {
@@ -203,6 +206,14 @@ p.--bulleted::before {
   background: var(--blue-gray);
   box-shadow: var(--soft-shadow);
   transition: background 0.3s ease;
+}
+
+.code-line {
+  margin-bottom: 1.5rem;
+  padding: 0.25rem 1rem;
+  background: var(--blue-gray--opacity30);
+  font-family: var(--mono-font);
+  opacity: 0.9;
 }
 
 img {
