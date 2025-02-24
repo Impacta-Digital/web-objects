@@ -1,6 +1,6 @@
-import { ColorBox } from '../../../components/content/ColorBox';
-import colors from '../../../constants/colors';
 import styles from './BoxBasic02.module.css';
+import colors from '../../../constants/colors';
+import { ColorBox } from '../../../components/content/ColorBox';
 
 export const BoxBasic02 = () => {
   return (

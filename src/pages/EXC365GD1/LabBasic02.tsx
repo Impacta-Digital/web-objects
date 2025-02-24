@@ -4,11 +4,13 @@ import videoData from '../../data/EXC365GD/videoData.ts';
 import downloadData from '../../data/EXC365GD/downloadData.ts';
 
 import { ImageContainer } from '../../components/layout/ImageContainer.tsx';
+import { CardHighlight } from '../../components/content/CardHighlight.tsx';
 import { PageFooter } from '../../components/layout/PageFooter.tsx';
 
 import { MainTitleAndIntro } from '../../components/page-blocks/MainTitleAndIntro.tsx';
 import { LabTitleAndDownload } from '../../components/page-blocks/LabTitleAndDownload.tsx';
 import { ViewResponseButton } from '../../components/page-blocks/ViewResponseButton.tsx';
+
 import { BoxBasic02 } from './components/BoxBasic02.tsx';
 
 import type PageData from '../../types/PageData.ts';
@@ -80,13 +82,16 @@ function LabBasic02() {
 
       <h2>Laboratório – Utilizando fórmulas e funções avançadas</h2>
 
-      <p>
-        Para este exercício, abra o arquivo <strong>Exercícios de Laboratório - Aula 2.xlsx</strong>, no qual há apenas
-        uma planilha.
-      </p>
+      <CardHighlight
+        customContent={
+          <>
+            Para esta atividade, abra o arquivo <strong>Exercícios de Laboratório - Aula 2.xlsx</strong>.
+          </>
+        }
+      />
 
       <p>
-        Você verá um banco de dados, contendo o <strong>Mês</strong>, a <strong>Região</strong> e as{' '}
+        No arquivo indicado, você verá um banco de dados contendo o <strong>Mês</strong>, a <strong>Região</strong> e as{' '}
         <strong>Vendas</strong>:
       </p>
 

@@ -4,7 +4,9 @@ import videoData from '../../data/EXC365GD/videoData.ts';
 import downloadData from '../../data/EXC365GD/downloadData.ts';
 
 import { ImageContainer } from '../../components/layout/ImageContainer.tsx';
+import { CardHighlight } from '../../components/content/CardHighlight.tsx';
 import { PageFooter } from '../../components/layout/PageFooter.tsx';
+
 import { MainTitleAndIntro } from '../../components/page-blocks/MainTitleAndIntro.tsx';
 import { LabTitleAndDownload } from '../../components/page-blocks/LabTitleAndDownload.tsx';
 import { ViewResponseButton } from '../../components/page-blocks/ViewResponseButton.tsx';
@@ -67,9 +69,16 @@ function LabBasic04() {
 
       <h2>Laboratório 1 – Eixo secundário e combinação de dois tipos de gráficos</h2>
 
+      <CardHighlight
+        customContent={
+          <>
+            Para as atividades a seguir, abra o arquivo <strong>Exercícios de Laboratório - Aula 4.xlsx</strong>.
+          </>
+        }
+      />
+
       <p>
-        No arquivo <strong>Exercícios de Laboratório - Aula 4.xlsx</strong> (Material Complementar), vá até a planilha{' '}
-        <strong>Seguros</strong>:
+        No arquivo indicado, vá até a planilha <strong>Seguros</strong>:
       </p>
 
       <ImageContainer src={pageData.images[7]} />
@@ -147,7 +156,7 @@ function LabBasic04() {
       <h2>Laboratório 2 – Gráfico de linhas, barras de dados e mapa de calor</h2>
 
       <p>
-        No arquivo <strong>Exercícios de Laboratório - Aula 4.xlsx</strong> (Material de Apoio), vá até a planilha{' '}
+        No mesmo arquivo, <strong>Exercícios de Laboratório - Aula 4.xlsx</strong>, vá até a planilha{' '}
         <strong>Temp</strong>:
       </p>
 

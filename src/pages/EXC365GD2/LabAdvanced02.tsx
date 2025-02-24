@@ -55,7 +55,7 @@ function LabAdvanced02() {
       <CardHighlight
         customContent={
           <>
-            Para este exercício, abra a pasta de trabalho
+            Para esta atividade, abra o arquivo
             <br />
             <strong>Exercícios de Laboratório - Aula 2.xlsx</strong>
           </>

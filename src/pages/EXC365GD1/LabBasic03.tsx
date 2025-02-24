@@ -4,14 +4,16 @@ import videoData from '../../data/EXC365GD/videoData.ts';
 import downloadData from '../../data/EXC365GD/downloadData.ts';
 
 import { ImageContainer } from '../../components/layout/ImageContainer.tsx';
+import { CardHighlight } from '../../components/content/CardHighlight.tsx';
 import { PageFooter } from '../../components/layout/PageFooter.tsx';
 
 import { MainTitleAndIntro } from '../../components/page-blocks/MainTitleAndIntro.tsx';
 import { LabTitleAndDownload } from '../../components/page-blocks/LabTitleAndDownload.tsx';
 import { ViewResponseButton } from '../../components/page-blocks/ViewResponseButton.tsx';
 
-import type PageData from '../../types/PageData.ts';
 import { BoxesBasic03 } from './components/BoxesBasic03.tsx';
+
+import type PageData from '../../types/PageData.ts';
 
 function LabBasic03() {
   const pageData: PageData = {
@@ -64,10 +66,15 @@ function LabBasic03() {
       <LabTitleAndDownload classTitle={pageData.classTitle} downloadPath={pageData.download} />
 
       <h2>Laboratório A – Trabalhando com controles de formulário</h2>
-      <p>
-        Para este exercício, abra o arquivo <strong>Exercícios de Laboratório - Aula 2.xlsx</strong> (Material de
-        Apoio).
-      </p>
+
+      <CardHighlight
+        customContent={
+          <>
+            Para as atividades a seguir, abra o arquivo <strong>Exercícios de Laboratório - Aula 3.xlsx</strong>.
+          </>
+        }
+      />
+
       <p>
         O arquivo contém dados históricos de uma empresa ao longo de 12 anos. O objetivo é automatizar algumas planilhas
         em termos de seleção de opções, fórmulas e navegação entre elas. Cada planilha será descrita a seguir.

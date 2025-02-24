@@ -116,20 +116,6 @@ p.--bulleted::before {
 
 /* - - - - - 📌 LAYOUT */
 
-img {
-  max-width: 100%;
-}
-
-.button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  background: var(--blue-gray);
-  box-shadow: var(--soft-shadow);
-  transition: background 0.3s ease;
-}
-
 .layout-container {
   width: 100%;
   max-width: 60rem;
@@ -180,10 +166,10 @@ img {
 }
 
 .image-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  max-width: 100%;
+  width: fit-content;
   padding: 0.5rem 2rem 1.5rem 2rem;
+  margin: 0 auto;
 }
 
 .page-footer {
@@ -207,6 +193,20 @@ img {
 
 .page-footer .copyright {
   font-size: medium;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: var(--blue-gray);
+  box-shadow: var(--soft-shadow);
+  transition: background 0.3s ease;
+}
+
+img {
+  max-width: 100%;
 }
 
 /* - - - - - 📌 AUX */

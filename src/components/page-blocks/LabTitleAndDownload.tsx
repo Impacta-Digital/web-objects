@@ -15,7 +15,7 @@ export const LabTitleAndDownload = (props: LabTitleAndDownloadProps) => {
       <div className='vertical-spacer' />
       <div className='vertical-spacer' />
 
-      <TitleAndDivider title='Mãos à Obra!' subheading='Laboratórios' />
+      <TitleAndDivider title='Mãos à Obra!' subheading={`Laboratório – ${classTitle}`} />
       <p>
         Estes exercícios complementam o aprendizado. Faça-os usando os conceitos aprendidos na aula{' '}
         <strong>{classTitle}</strong>. Cada exercício contém as instruções necessárias para você completar as

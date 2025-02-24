@@ -4,10 +4,13 @@ import videoData from '../../data/EXC365GD/videoData.ts';
 import downloadData from '../../data/EXC365GD/downloadData.ts';
 
 import { ImageContainer } from '../../components/layout/ImageContainer.tsx';
+import { CardHighlight } from '../../components/content/CardHighlight.tsx';
 import { PageFooter } from '../../components/layout/PageFooter.tsx';
+
 import { MainTitleAndIntro } from '../../components/page-blocks/MainTitleAndIntro.tsx';
 import { LabTitleAndDownload } from '../../components/page-blocks/LabTitleAndDownload.tsx';
 import { ViewResponseButton } from '../../components/page-blocks/ViewResponseButton.tsx';
+
 import { BoxesAdvanced01 } from './components/BoxesAdvanced01.tsx';
 
 import type PageData from '../../types/PageData.ts';
@@ -33,9 +36,16 @@ function LabAdvanced01() {
 
       <h2>Laboratório 1 – Destacando o maior valor do ano</h2>
 
+      <CardHighlight
+        customContent={
+          <>
+            Para as atividades a seguir, abra o arquivo <strong>Exercícios de Laboratório - Aula 1.xlsx</strong>.
+          </>
+        }
+      />
+
       <p>
-        No arquivo <strong>Exercícios de Laboratório - Aula 1.xlsx</strong> (Material de Apoio), vá até a{' '}
-        <strong>Planilha1</strong>.
+        No arquivo indicado, vá até a <strong>Planilha1</strong>.
       </p>
       <p>
         Observe uma tabela de valores de vendas em cada mês do ano. Ao lado, há um gráfico de colunas agrupadas,
@@ -101,8 +111,8 @@ function LabAdvanced01() {
       <h2>Laboratório 2 – Controlando um gráfico e formatação por meio de uma caixa de seleção</h2>
 
       <p>
-        No arquivo <strong>Exercícios de Laboratório - Aula 1.xlsx</strong> (Material de Apoio), vá até a{' '}
-        <strong>Planilha2</strong>.
+        No mesmo arquivo, <strong>Exercícios de Laboratório - Aula 1.xlsx</strong> , vá até a <strong>Planilha2</strong>
+        .
       </p>
       <p>
         A <strong>Planilha2</strong> contém a mesma tabela e o mesmo gráfico que a planilha anterior. O objetivo desta
