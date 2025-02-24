@@ -72,7 +72,8 @@ function LabBasic04() {
       <CardHighlight
         customContent={
           <>
-            Para as atividades a seguir, abra o arquivo <strong>Exercícios de Laboratório - Aula 4.xlsx</strong>.
+            Para realizar as atividades práticas desta aula, abra o arquivo{' '}
+            <strong>Exercícios de Laboratório - Aula 4.xlsx</strong>.
           </>
         }
       />
