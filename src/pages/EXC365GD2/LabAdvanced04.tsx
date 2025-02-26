@@ -838,7 +838,6 @@ function LabAdvanced04() {
         botão <strong>Alinhar</strong>;
       </p>
       <p className='--padding-left'>
-        {/* 🐞⚠️ */}
         40. Clique em uma célula vazia da planilha. Insira uma imagem que se encontra na pasta{''}
         <strong>Imagens</strong>: <strong>Botão.png</strong>. Formate a largura e a altura da imagem para que fique com
         1,5 cm. Em seguida, centralize-a dentro do velocímetro;
