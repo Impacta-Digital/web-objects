@@ -1,4 +1,4 @@
-import { IconLightbulb } from '../../components/icons/Lightbulb';
+import { IconLightbulb } from '../../components/EXC365GD/icons/Lightbulb';
 
 export const ButtonToggleColorMode = () => {
   const toggleColorMode = () => {

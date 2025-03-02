@@ -1,4 +1,4 @@
-import colors from '../../constants/colors';
+import colors from '../../../constants/EXC365GD/colors';
 
 export interface TitleAndDividerProps {
   title: string;

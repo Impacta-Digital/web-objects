@@ -1,6 +1,6 @@
 import styles from './BoxesAdvanced01.module.css';
-import colors from '../../../constants/colors';
-import { ColorBox } from '../../../components/content/ColorBox';
+import colors from '../../../constants/EXC365GD/colors';
+import { ColorBox } from '../../../components/EXC365GD/content/ColorBox';
 
 export const BoxesAdvanced01 = () => {
   const boxColors = [colors.purple, colors.cyan, colors.pink];

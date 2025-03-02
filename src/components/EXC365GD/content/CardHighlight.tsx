@@ -1,7 +1,7 @@
 import styles from './CardHighlight.module.css';
 import { IconExclamation } from '../icons/Exclamation';
-import { makeTransparent } from '../../utils/colorUtils';
-import colors from '../../constants/colors';
+import { makeTransparent } from '../../../utils/colorUtils';
+import colors from '../../../constants/EXC365GD/colors';
 
 export interface CardHighlightProps {
   text?: string;

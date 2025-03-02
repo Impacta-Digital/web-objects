@@ -1,18 +1,18 @@
-import colors from '../../constants/colors.ts';
+import colors from '../../constants/EXC365GD/colors.ts';
 import courseData from '../../data/EXC365GD/courseData.ts';
 import imageData from './assets/imageData.ts';
 import downloadData from '../../data/EXC365GD/downloadData.ts';
 
-import { ImageContainer } from '../../components/layout/ImageContainer.tsx';
-import { PageFooter } from '../../components/layout/PageFooter.tsx';
-import { CardHighlight } from '../../components/content/CardHighlight.tsx';
-import { TitleAndDivider } from '../../components/layout/TitleAndDivider';
-import { DownloadButton } from '../../components/layout/DownloadButton';
+import { ImageContainer } from '../../components/EXC365GD/layout/ImageContainer.tsx';
+import { PageFooter } from '../../components/EXC365GD/layout/PageFooter.tsx';
+import { CardHighlight } from '../../components/EXC365GD/content/CardHighlight.tsx';
+import { TitleAndDivider } from '../../components/EXC365GD/layout/TitleAndDivider.tsx';
+import { DownloadButton } from '../../components/EXC365GD/layout/DownloadButton.tsx';
 
 import { BoxAdvanced04 } from './components/BoxAdvanced04.tsx';
 import { TableAdvanced04 } from './components/TableAdvanced04.tsx';
 
-import type PageData from '../../types/PageData.ts';
+import type PageData from '../../types/EXC365GD/PageData.ts';
 
 function LabAdvanced04() {
   const pageData: PageData = {

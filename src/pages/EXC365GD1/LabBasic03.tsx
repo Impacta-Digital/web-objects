@@ -3,17 +3,17 @@ import imageData from './assets/imageData.ts';
 import videoData from '../../data/EXC365GD/videoData.ts';
 import downloadData from '../../data/EXC365GD/downloadData.ts';
 
-import { ImageContainer } from '../../components/layout/ImageContainer.tsx';
-import { CardHighlight } from '../../components/content/CardHighlight.tsx';
-import { PageFooter } from '../../components/layout/PageFooter.tsx';
+import { ImageContainer } from '../../components/EXC365GD/layout/ImageContainer.tsx';
+import { CardHighlight } from '../../components/EXC365GD/content/CardHighlight.tsx';
+import { PageFooter } from '../../components/EXC365GD/layout/PageFooter.tsx';
 
-import { MainTitleAndIntro } from '../../components/page-blocks/MainTitleAndIntro.tsx';
-import { LabTitleAndDownload } from '../../components/page-blocks/LabTitleAndDownload.tsx';
-import { ViewResponseButton } from '../../components/page-blocks/ViewResponseButton.tsx';
+import { MainTitleAndIntro } from '../../components/EXC365GD/page-blocks/MainTitleAndIntro.tsx';
+import { LabTitleAndDownload } from '../../components/EXC365GD/page-blocks/LabTitleAndDownload.tsx';
+import { ViewResponseButton } from '../../components/EXC365GD/page-blocks/ViewResponseButton.tsx';
 
 import { BoxesBasic03 } from './components/BoxesBasic03.tsx';
 
-import type PageData from '../../types/PageData.ts';
+import type PageData from '../../types/EXC365GD/PageData.ts';
 
 function LabBasic03() {
   const pageData: PageData = {

@@ -1,6 +1,6 @@
 import styles from './BoxAdvanced04.module.css';
-import colors from '../../../constants/colors';
-import { ColorBox } from '../../../components/content/ColorBox';
+import colors from '../../../constants/EXC365GD/colors';
+import { ColorBox } from '../../../components/EXC365GD/content/ColorBox';
 
 export const BoxAdvanced04 = () => {
   return (

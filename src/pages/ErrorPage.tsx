@@ -1,4 +1,4 @@
-import styles from '../styles/page.module.css';
+import styles from '../styles/_page.module.css';
 import { useRouteError } from 'react-router-dom';
 
 export const ErrorPage = () => {

@@ -1,7 +1,7 @@
 import { createBrowserRouter, Outlet } from 'react-router-dom';
 import { pageId as EXC365GD } from './EXC365GD';
 
-import { FullScreenLayout } from '../layouts/FullScreenLayout';
+import { EXC365GDLayout } from '../layouts/EXC365GD';
 import { ErrorPage } from '../pages/ErrorPage';
 import { HomePage } from '../pages/HomePage';
 
@@ -16,13 +16,13 @@ import Advanced04 from '../pages/EXC365GD2/LabAdvanced04';
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <FullScreenLayout />,
+    element: <Outlet />,
     errorElement: <ErrorPage />,
     children: [
       { index: true, element: <HomePage /> },
       {
         path: 'EXC365GD1/',
-        element: <Outlet />,
+        element: <EXC365GDLayout />,
         children: [
           { index: true, element: <HomePage /> },
           { path: EXC365GD.basic[2], element: <Basic02 /> },
@@ -32,7 +32,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'EXC365GD2/',
-        element: <Outlet />,
+        element: <EXC365GDLayout />,
         children: [
           { index: true, element: <HomePage /> },
           { path: EXC365GD.advanced[1], element: <Advanced01 /> },

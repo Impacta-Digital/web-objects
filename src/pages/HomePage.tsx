@@ -1,4 +1,4 @@
-import styles from '../styles/page.module.css';
+import styles from '../styles/_page.module.css';
 import { useEffect, useState } from 'react';
 
 export const HomePage = () => {

@@ -1,5 +1,5 @@
-import { ColorBox } from '../../../components/content/ColorBox';
-import colors from '../../../constants/colors';
+import { ColorBox } from '../../../components/EXC365GD/content/ColorBox';
+import colors from '../../../constants/EXC365GD/colors';
 import styles from './BoxesBasic03.module.css';
 
 export const BoxesBasic03 = () => {
