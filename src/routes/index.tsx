@@ -1,9 +1,10 @@
 import { createBrowserRouter, Outlet } from 'react-router-dom';
-import { pageId as EXC365GD } from './EXC365GD';
 
-import { EXC365GDLayout } from '../layouts/EXC365GD';
 import { ErrorPage } from '../pages/ErrorPage';
 import { HomePage } from '../pages/HomePage';
+
+import { EXC365GDLayout } from '../layouts/EXC365GD';
+import { pageId as EXC365GD } from './EXC365GD';
 
 import Basic02 from '../pages/EXC365GD1/LabBasic02';
 import Basic03 from '../pages/EXC365GD1/LabBasic03';
@@ -13,6 +14,8 @@ import Advanced02 from '../pages/EXC365GD2/LabAdvanced02';
 import Advanced03 from '../pages/EXC365GD2/LabAdvanced03';
 import Advanced04 from '../pages/EXC365GD2/LabAdvanced04';
 
+import { pageId as SQL } from './SQL';
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -21,7 +24,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <HomePage /> },
       {
-        path: 'EXC365GD1/',
+        path: EXC365GD.basic.path,
         element: <EXC365GDLayout />,
         children: [
           { index: true, element: <HomePage /> },
@@ -31,7 +34,7 @@ const router = createBrowserRouter([
         ],
       },
       {
-        path: 'EXC365GD2/',
+        path: EXC365GD.advanced.path,
         element: <EXC365GDLayout />,
         children: [
           { index: true, element: <HomePage /> },
@@ -39,6 +42,26 @@ const router = createBrowserRouter([
           { path: EXC365GD.advanced[2], element: <Advanced02 /> },
           { path: EXC365GD.advanced[3], element: <Advanced03 /> },
           { path: EXC365GD.advanced[4], element: <Advanced04 /> },
+        ],
+      },
+      {
+        path: SQL.path,
+        element: <Outlet />,
+        children: [
+          { index: true, element: <HomePage /> },
+          { path: SQL.intro, element: <h1>intro</h1> },
+          { path: SQL[1], element: <h1>webObject 1</h1> },
+          { path: SQL[2], element: <h1>webObject 2</h1> },
+          { path: SQL[5], element: <h1>webObject 5</h1> },
+          { path: SQL[6].A, element: <h1>webObject 6A</h1> },
+          { path: SQL[6].B, element: <h1>webObject 6B</h1> },
+          { path: SQL[8], element: <h1>webObject 8</h1> },
+          { path: SQL[9], element: <h1>webObject 9</h1> },
+          { path: SQL[10], element: <h1>webObject 10</h1> },
+          { path: SQL[12], element: <h1>webObject 12</h1> },
+          { path: SQL[13], element: <h1>webObject 13</h1> },
+          { path: SQL[14], element: <h1>webObject 14</h1> },
+          { path: SQL[15], element: <h1>webObject 15</h1> },
         ],
       },
     ],
