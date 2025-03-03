@@ -3,7 +3,6 @@ export const baseUrl = 'https://web-objects-2p54r.ondigitalocean.app/';
 export const pageId = {
   path: 'SQL/',
   intro: 'faed5c9f-5fa2-48c1-9658-84777a2d94d0',
-  1: '53b58401-b95e-45c2-9b01-1cc538ae8616',
   2: '11831fb7-855e-40dd-ac74-d7860c80f712',
   5: '2843fa54-2a9c-4d7b-9510-8ac7993bd82b',
   6: {
