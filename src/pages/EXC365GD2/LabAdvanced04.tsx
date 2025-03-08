@@ -1,4 +1,4 @@
-import colors from '../../constants/EXC365GD/colors.ts';
+import colors from '../../constants/EXC365GDcolors.ts';
 import courseData from '../../data/EXC365GD/courseData.ts';
 import imageData from './assets/imageData.ts';
 import downloadData from '../../data/EXC365GD/downloadData.ts';

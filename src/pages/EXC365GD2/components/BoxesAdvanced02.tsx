@@ -1,5 +1,5 @@
 import styles from './BoxesAdvanced02.module.css';
-import colors from '../../../constants/EXC365GD/colors';
+import colors from '../../../constants/EXC365GDcolors';
 import { ColorBox } from '../../../components/EXC365GD/content/ColorBox';
 
 export const BoxesAdvanced02 = () => {
