@@ -3,7 +3,7 @@ import { createBrowserRouter, Outlet } from 'react-router-dom';
 import { ErrorPage } from '../pages/ErrorPage';
 import { HomePage } from '../pages/HomePage';
 
-import { EXC365GDLayout } from '../layouts/EXC365GD';
+import { LayoutEXC365GD } from '../layouts/EXC365GD/LayoutEXC365GD';
 import { pageId as EXC365GD } from './EXC365GD';
 
 import Basic02 from '../pages/EXC365GD1/LabBasic02';
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
       { index: true, element: <HomePage /> },
       {
         path: EXC365GD.basic.path,
-        element: <EXC365GDLayout />,
+        element: <LayoutEXC365GD />,
         children: [
           { index: true, element: <HomePage /> },
           { path: EXC365GD.basic[2], element: <Basic02 /> },
@@ -35,7 +35,7 @@ const router = createBrowserRouter([
       },
       {
         path: EXC365GD.advanced.path,
-        element: <EXC365GDLayout />,
+        element: <LayoutEXC365GD />,
         children: [
           { index: true, element: <HomePage /> },
           { path: EXC365GD.advanced[1], element: <Advanced01 /> },
@@ -50,7 +50,7 @@ const router = createBrowserRouter([
         children: [
           { index: true, element: <HomePage /> },
           { path: SQL.intro, element: <h1>intro</h1> },
-          { path: SQL[1], element: <h1>webObject 1</h1> },
+          { path: SQL['intro'], element: <h1>webObject 1</h1> },
           { path: SQL[2], element: <h1>webObject 2</h1> },
           { path: SQL[5], element: <h1>webObject 5</h1> },
           { path: SQL[6].A, element: <h1>webObject 6A</h1> },
