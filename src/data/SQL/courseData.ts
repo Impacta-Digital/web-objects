@@ -18,5 +18,5 @@ export const classTitles = {
   14: 'Operadores de Conjuntos e Instruções',
   15: 'Introdução a Programação',
   16: 'Introdução à Procedure',
-  17: 'Conteúdo Extra', // FIXME: positioning
+  17: 'Conteúdo Extra',
 };
