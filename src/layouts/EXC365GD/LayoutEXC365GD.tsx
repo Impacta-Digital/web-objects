@@ -2,10 +2,10 @@ import './LayoutEXC365GD.css';
 
 import { Outlet } from 'react-router-dom';
 import { FullScreen } from 'react-full-screen';
-import { useFullScreen } from '../contexts/fullScreen';
+import { useFullScreen } from '../../contexts/fullScreen';
 
-import { ButtonToggleColorMode } from './EXC365GD/components/ButtonToggleColorMode';
-import { ButtonToggleFS } from './EXC365GD/components/ButtonToggleFS';
+import { ButtonToggleColorMode } from './components/ButtonToggleColorMode';
+import { ButtonToggleFS } from './components/ButtonToggleFS';
 
 export const LayoutEXC365GD = () => {
   const { isFSEnabled, fSHandle } = useFullScreen();
