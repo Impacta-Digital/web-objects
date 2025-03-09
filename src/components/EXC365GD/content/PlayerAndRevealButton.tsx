@@ -14,7 +14,7 @@ export const PlayerAndRevealButton = ({ videoId, buttonText }: PlayerAndRevealBu
   const [showVideo, setShowVideo] = useState(false);
 
   return (
-    <div className={styles['container']}>
+    <div className={styles.container}>
       <div className='large-button-container'>
         <div className='button large-button' onClick={() => setShowVideo(!showVideo)}>
           <div className='large-button-icon'>{showVideo ? <IconChevronDown /> : <IconChevronRight />}</div>
@@ -25,8 +25,8 @@ export const PlayerAndRevealButton = ({ videoId, buttonText }: PlayerAndRevealBu
       {/* - - - - - spacer */}
       <div className='vertical-spacer' />
 
-      <div className={`${styles['video-container']} ${showVideo ? styles['open'] : ''}`}>
-        <div className={styles['iframe']}>
+      <div className={`${styles['video-container']} ${showVideo ? styles.open : ''}`}>
+        <div className={styles.iframe}>
           <iframe
             width='100%'
             height='100%'

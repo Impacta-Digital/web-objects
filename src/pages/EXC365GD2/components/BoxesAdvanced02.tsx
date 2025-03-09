@@ -5,7 +5,7 @@ import { ColorBox } from '../../../components/EXC365GD/content/ColorBox';
 export const BoxesAdvanced02 = () => {
   const boxColors = [colors.cyan, colors.purple, colors.pink];
   const paragraphs = [
-    <p>
+    <p key='paragraph-0'>
       É possível criar uma lista com imagens na planilha, as quais podem ser recuperadas por fórmulas e levadas para uma
       área designada. Quando uma condição muda, a imagem pode mudar também. Essa técnica é conhecida como imagens
       dinâmicas. Em um dashboard, isso é útil para você recuperar imagens de produtos, logotipos, fotos, ícones, etc. Em
@@ -41,7 +41,7 @@ export const BoxesAdvanced02 = () => {
   return (
     <div className={styles['boxes-grid']}>
       {paragraphs.map((paragraph, index) => (
-        <ColorBox color={boxColors[index]} content={paragraph} />
+        <ColorBox color={boxColors[index]} content={paragraph} key={`colorBox-${index}`} />
       ))}
     </div>
   );

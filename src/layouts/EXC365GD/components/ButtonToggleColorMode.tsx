@@ -5,13 +5,17 @@ export const ButtonToggleColorMode = () => {
     const body = document.querySelector('body');
     const fullscreen = document.querySelector('.fullscreen');
 
-    if (body) body.classList.toggle('--light-mode');
-    if (fullscreen) fullscreen.classList.toggle('--light-mode');
+    if (body) {
+      body.classList.toggle('--light-mode');
+    }
+    if (fullscreen) {
+      fullscreen.classList.toggle('--light-mode');
+    }
   };
 
   return (
     <div className='button layout-button' onClick={toggleColorMode}>
-      {<IconLightbulb />}
+      <IconLightbulb />
     </div>
   );
 };

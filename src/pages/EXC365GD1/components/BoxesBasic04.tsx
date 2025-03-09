@@ -5,13 +5,13 @@ import { ColorBox } from '../../../components/EXC365GD/content/ColorBox';
 export const BoxesBasic04 = () => {
   const boxColors = [colors.purple, colors.cyan];
   const paragraphs = [
-    <p>
+    <p key='paragraph-0'>
       Há situações no dashboard em que um gráfico ocuparia muito espaço. Nesses casos, você poderá criar gráficos dentro
       de células: <strong>mini-gráficos</strong>,{' '}
       <strong>formatação condicional com barras de dados ou escalas de cores</strong>, e{' '}
       <strong>gráficos usando repetição de caracteres</strong>;
     </p>,
-    <p>
+    <p key='paragraph-1'>
       Quando uma série de dados representa valores muito pequenos e outra série valores muito grandes, dificilmente os
       valores pequenos poderão ser vistos no gráfico. Nesse caso, a melhor abordagem é fazer com que essa série exiba
       seus valores em outro eixo vertical, chamado <strong>eixo secundário</strong>. Dessa maneira, é possível
@@ -22,9 +22,9 @@ export const BoxesBasic04 = () => {
   ];
 
   return (
-    <div className={styles['container']}>
+    <div className={styles.container}>
       {boxColors.map((color, index) => (
-        <ColorBox color={color} content={paragraphs[index]} />
+        <ColorBox color={color} content={paragraphs[index]} key={`colorBox-${index}`} />
       ))}
     </div>
   );

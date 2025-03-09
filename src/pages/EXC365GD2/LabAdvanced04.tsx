@@ -436,7 +436,7 @@ function LabAdvanced04() {
       </p>
 
       <div className='--padding-left'>
-        <div className='code-line'>=SEERRO(D6/SOMA($D$6:$D$9); "")</div>
+        <div className='code-line'>{`=SEERRO(D6/SOMA($D$6:$D$9); "")`}</div>
       </div>
 
       <p className='--padding-left'>20. Copie a fórmula para as demais categorias;</p>
@@ -616,7 +616,7 @@ function LabAdvanced04() {
       </p>
 
       <div className='--padding-left'>
-        <div className='code-line'>=BDMÁX(Chamados[#Tudo];"Tempo";AC2:AD3)</div>
+        <div className='code-line'>{`=BDMÁX(Chamados[#Tudo];"Tempo";AC2:AD3)`}</div>
       </div>
 
       <p className='--padding-left'>
@@ -689,7 +689,7 @@ function LabAdvanced04() {
       </p>
 
       <div className='--padding-left'>
-        <div className='code-line'>=AK12 & " reclamações em " & TEXTO(F5;"mmmm/aaaa")</div>
+        <div className='code-line'>{`=AK12 & " reclamações em " & TEXTO(F5;"mmmm/aaaa")`}</div>
       </div>
 
       <ImageContainer src={pageData.images[23]} />
@@ -838,9 +838,9 @@ function LabAdvanced04() {
         botão <strong>Alinhar</strong>;
       </p>
       <p className='--padding-left'>
-        40. Clique em uma célula vazia da planilha. Insira uma imagem que se encontra na pasta{''}
-        <strong>Imagens</strong>: <strong>Botão.png</strong>. Formate a largura e a altura da imagem para que fique com
-        1,5 cm. Em seguida, centralize-a dentro do velocímetro;
+        40. Clique em uma célula vazia da planilha. Insira uma imagem que se encontra na pasta <strong>Imagens</strong>:{' '}
+        <strong>Botão.png</strong>. Formate a largura e a altura da imagem para que fique com 1,5 cm. Em seguida,
+        centralize-a dentro do velocímetro;
       </p>
       <p className='--padding-left'>
         41. Caso algum dos gráficos ou formas geométricas tenha ficado fora de ordem, use o{' '}

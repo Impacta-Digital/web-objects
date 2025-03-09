@@ -6,7 +6,7 @@ export const HomePage = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setDots((prevDots) => (prevDots.length < 3 ? prevDots + '.' : ''));
+      setDots((prevDots) => (prevDots.length < 3 ? `${prevDots}.` : ''));
     }, 1000);
 
     const timer = setTimeout(() => {
@@ -20,7 +20,7 @@ export const HomePage = () => {
   }, []);
 
   return (
-    <div className={styles['container']}>
+    <div className={styles.container}>
       <h1>Opa!</h1>
       <p>
         <i>Parece</i> que não tem nada aqui{dots}

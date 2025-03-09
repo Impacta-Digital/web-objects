@@ -50,7 +50,7 @@ const router = createBrowserRouter([
         children: [
           { index: true, element: <HomePage /> },
           { path: SQL.intro, element: <h1>intro</h1> },
-          { path: SQL['intro'], element: <h1>webObject 1</h1> },
+          { path: SQL.intro, element: <h1>webObject 1</h1> },
           { path: SQL[2], element: <h1>webObject 2</h1> },
           { path: SQL[5], element: <h1>webObject 5</h1> },
           { path: SQL[6].A, element: <h1>webObject 6A</h1> },

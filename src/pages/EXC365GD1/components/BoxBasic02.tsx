@@ -4,7 +4,7 @@ import { ColorBox } from '../../../components/EXC365GD/content/ColorBox';
 
 export const BoxBasic02 = () => {
   return (
-    <div className={styles['container']}>
+    <div className={styles.container}>
       <ColorBox
         color={colors.cyan}
         content={

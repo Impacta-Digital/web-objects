@@ -2,7 +2,7 @@ import styles from './Page.module.css';
 import { useRouteError } from 'react-router-dom';
 
 export const ErrorPage = () => {
-  const error: any = useRouteError();
+  const error = useRouteError() as { status?: number; statusText?: string; message?: string };
   console.error(error);
 
   return (
@@ -12,7 +12,7 @@ export const ErrorPage = () => {
       <p>
         <i>
           {error.status} &nbsp;
-          {error.statusText || error.message}
+          {error.statusText ?? error.message}
         </i>
       </p>
     </div>

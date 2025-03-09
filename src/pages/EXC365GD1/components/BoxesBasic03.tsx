@@ -5,24 +5,24 @@ import styles from './BoxesBasic03.module.css';
 export const BoxesBasic03 = () => {
   const boxColors = [colors.cyan, colors.purple, colors.pink, colors.keyLime];
   const paragraphs = [
-    <p>
+    <p key='paragraph-0'>
       <strong>
         Um formulário em planilha com aspecto profissional possui controles bem alinhados e distribuídos uniformemente.
       </strong>{' '}
       Isso facilita a separação visual das informações;
     </p>,
-    <p>
+    <p key='paragraph-1'>
       <strong>É possível usar controles de formulário para ativar ou desativar formatações condicionais.</strong> Isso é
       útil porque você poderá até controlar se deseja ver determinados destaques ou não no seu dashboard;
     </p>,
-    <p>
+    <p key='paragraph-2'>
       <strong>
         Você também pode vincular uma lista de itens à outra, por meio de caixas de combinação (listas suspensas) ou por
         validação de dados.
       </strong>{' '}
       Dessa forma, quando a primeira lista muda de valor, a segunda é carregada com valores relevantes à primeira;
     </p>,
-    <p>
+    <p key='paragraph-3'>
       <strong>
         A navegação por links em seu dashboard representa uma forma muito intuitiva, bastante semelhante à navegação em
         páginas da Web.
@@ -36,7 +36,7 @@ export const BoxesBasic03 = () => {
   return (
     <div className={styles['boxes-grid']}>
       {paragraphs.map((paragraph, index) => (
-        <ColorBox color={boxColors[index]} content={paragraph} />
+        <ColorBox color={boxColors[index]} content={paragraph} key={`colorBox-${index}`} />
       ))}
     </div>
   );
