@@ -108,27 +108,27 @@ function LabBasic02() {
 
       <p>Para resolver este exercício, siga as orientações adiante:</p>
 
-      <p className='--padding-left'>
+      <p className='--paddingLeft'>
         1. Use a lista de meses da coluna <strong>N</strong> para aplicar validação de dados por lista à célula{' '}
         <strong>D4</strong>;
       </p>
-      <p className='--padding-left'>
+      <p className='--paddingLeft'>
         2. A tabela nas colunas <strong>G</strong> e <strong>H</strong> possui a relação de todas as regiões que
         aparecem na base de dados:
       </p>
 
       <ImageContainer src={pageData.images[3]} />
 
-      <p className='--padding-left'>
+      <p className='--paddingLeft'>
         3. Calcule, na coluna <strong>H</strong>, a soma das vendas usando como critérios o nome da região ao lado
         esquerdo e o mês escolhido em <strong>D4</strong>;
       </p>
-      <p className='--padding-left'>
+      <p className='--paddingLeft'>
         4. Nas células <strong>D7</strong>, <strong>D8</strong> e <strong>D9</strong>, calcule, respectivamente, o 1º
         maior valor de vendas, o 2º maior valor de vendas e o 3º maior valor de vendas. Use como ordem os números da
         coluna <strong>B</strong>;
       </p>
-      <p className='--padding-left'>
+      <p className='--paddingLeft'>
         5. Finalmente, na coluna <strong>C</strong>, localize cada valor de vendas na tabela de vendas mensais e traga a
         região correspondente.
       </p>

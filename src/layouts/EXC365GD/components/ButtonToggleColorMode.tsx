@@ -14,7 +14,7 @@ export const ButtonToggleColorMode = () => {
   };
 
   return (
-    <div className='button layout-button' onClick={toggleColorMode}>
+    <div className='button layoutButton' onClick={toggleColorMode}>
       <IconLightbulb />
     </div>
   );

@@ -1,5 +1,6 @@
 import { createBrowserRouter, Outlet } from 'react-router-dom';
 
+import { MainLayout } from '../layouts/MainLayout';
 import { ErrorPage } from '../pages/ErrorPage';
 import { HomePage } from '../pages/HomePage';
 
@@ -46,7 +47,7 @@ const router = createBrowserRouter([
       },
       {
         path: SQL.path,
-        element: <Outlet />,
+        element: <MainLayout />,
         children: [
           { index: true, element: <HomePage /> },
           { path: SQL.intro, element: <h1>intro</h1> },

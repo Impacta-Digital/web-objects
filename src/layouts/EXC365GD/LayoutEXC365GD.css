@@ -49,9 +49,13 @@
   background: var(--light);
   color: var(--dark);
 }
-.exc365GD-body .fullscreen.fullscreen-enabled {
-  overflow: auto;
-  padding-top: 2rem;
+
+.exc365GD-body .layoutButtons-container {
+  display: flex;
+  gap: 0.75rem;
+  top: 1rem;
+  position: absolute;
+  right: 1rem;
 }
 
 /* - - - - - 📌 TYPOGRAPHY */
@@ -69,18 +73,18 @@
   background: var(--theme--opacity40);
 }
 
-.exc365GD-body .layout-button svg {
+.exc365GD-body .layoutButton svg {
   fill: var(--light);
 }
 
-.exc365GD-body .large-button {
+.exc365GD-body .largeButton {
   color: var(--light);
 }
-.exc365GD-body .large-button-icon {
+.exc365GD-body .largeButtonIcon {
   fill: var(--light);
 }
 
-.exc365GD-body .page-footer .title {
+.exc365GD-body .pageFooter .title {
   color: var(--theme);
 }
 
@@ -88,7 +92,7 @@
   background: var(--blue-gray);
 }
 
-.exc365GD-body .code-line {
+.exc365GD-body .codeLine {
   background: var(--blue-gray--opacity30);
 }
 
@@ -104,5 +108,9 @@
   .exc365GD-body,
   .exc365GD-body .fullscreen {
     width: 100dvw;
+  }
+
+  .exc365GD-body .layoutButtons-container {
+    top: 2.5rem;
   }
 }

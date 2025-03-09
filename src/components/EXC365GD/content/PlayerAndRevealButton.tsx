@@ -15,15 +15,15 @@ export const PlayerAndRevealButton = ({ videoId, buttonText }: PlayerAndRevealBu
 
   return (
     <div className={styles.container}>
-      <div className='large-button-container'>
-        <div className='button large-button' onClick={() => setShowVideo(!showVideo)}>
-          <div className='large-button-icon'>{showVideo ? <IconChevronDown /> : <IconChevronRight />}</div>
+      <div className='largeButtonContainer'>
+        <div className='button largeButton' onClick={() => setShowVideo(!showVideo)}>
+          <div className='largeButtonIcon'>{showVideo ? <IconChevronDown /> : <IconChevronRight />}</div>
           {buttonText}
         </div>
       </div>
 
       {/* - - - - - spacer */}
-      <div className='vertical-spacer' />
+      <div className='verticalSpacer' />
 
       <div className={`${styles['video-container']} ${showVideo ? styles.open : ''}`}>
         <div className={styles.iframe}>
@@ -45,7 +45,7 @@ export const PlayerAndRevealButton = ({ videoId, buttonText }: PlayerAndRevealBu
         </div>
 
         {/* - - - - - spacer */}
-        <div className='vertical-spacer' />
+        <div className='verticalSpacer' />
       </div>
     </div>
   );

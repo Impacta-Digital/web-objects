@@ -5,15 +5,15 @@ export interface PageFooterProps {
 
 export const PageFooter = ({ title, course }: PageFooterProps) => {
   return (
-    <footer className='page-footer'>
+    <footer className='pageFooter'>
       {/* - - - - - spacer */}
-      <div className='vertical-spacer--sm' />
+      <div className='verticalSpacer--sm' />
 
       <div className='wrapper'>
-        <div className='dashed-divider' />
+        <div className='dashedDivider' />
 
         {/* - - - - - spacer */}
-        <div className='vertical-spacer--sm' />
+        <div className='verticalSpacer--sm' />
 
         <p>
           <span className='title'>{title}</span> <span className='course'>{course}</span>
@@ -22,7 +22,7 @@ export const PageFooter = ({ title, course }: PageFooterProps) => {
         </p>
 
         {/* - - - - - spacer */}
-        <div className='vertical-spacer' />
+        <div className='verticalSpacer' />
       </div>
     </footer>
   );

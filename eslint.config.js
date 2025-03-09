@@ -41,6 +41,7 @@ export default tseslint.config(
       'react/jsx-curly-brace-presence': ['error', { props: 'never', children: 'never' }],
       'react/jsx-fragments': ['error', 'syntax'],
       '@typescript-eslint/no-empty-function': 'warn',
+      '@typescript-eslint/no-unused-vars': 'warn',
     },
   },
 );

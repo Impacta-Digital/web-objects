@@ -5,7 +5,7 @@ export interface ImageContainerProps {
 
 export const ImageContainer = ({ src, alt }: ImageContainerProps) => {
   return (
-    <div className='image-container'>
+    <div className='imageContainer'>
       <img src={src} alt={alt} />
     </div>
   );

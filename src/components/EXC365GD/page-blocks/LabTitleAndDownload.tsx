@@ -12,8 +12,8 @@ export const LabTitleAndDownload = (props: LabTitleAndDownloadProps) => {
   return (
     <>
       {/* - - - - - spacer */}
-      <div className='vertical-spacer' />
-      <div className='vertical-spacer' />
+      <div className='verticalSpacer' />
+      <div className='verticalSpacer' />
 
       <TitleAndDivider title='Mãos à Obra!' subheading={`Laboratório – ${classTitle}`} />
       <p>
@@ -26,8 +26,8 @@ export const LabTitleAndDownload = (props: LabTitleAndDownloadProps) => {
       <DownloadButton filePath={downloadPath} buttonText='Material de Apoio' />
 
       {/* - - - - - spacer */}
-      <div className='vertical-spacer' />
-      <div className='vertical-spacer' />
+      <div className='verticalSpacer' />
+      <div className='verticalSpacer' />
     </>
   );
 };

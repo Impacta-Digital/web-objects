@@ -7,10 +7,10 @@ export interface DownloadButtonProps {
 
 export const DownloadButton = ({ filePath, buttonText }: DownloadButtonProps) => {
   return (
-    <div className='large-button-container'>
+    <div className='largeButtonContainer'>
       <a href={filePath} download>
-        <div className='button large-button'>
-          <div className='large-button-icon'>
+        <div className='button largeButton'>
+          <div className='largeButtonIcon'>
             <IconFolderDownload />
           </div>
 

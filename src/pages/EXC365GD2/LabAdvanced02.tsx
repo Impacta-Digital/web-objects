@@ -77,21 +77,21 @@ function LabAdvanced02() {
 
       <p>Premissas:</p>
 
-      <p className='--padding-left --bulleted'>
+      <p className='--paddingLeft --bulleted'>
         A célula <strong>C7</strong> conterá o nome do produto escolhido na caixa de combinação;
       </p>
-      <p className='--padding-left --bulleted'>
+      <p className='--paddingLeft --bulleted'>
         A célula <strong>C18</strong> trará o preço desse produto, obtido da lista <strong>Preços</strong>;
       </p>
-      <p className='--padding-left --bulleted'>
+      <p className='--paddingLeft --bulleted'>
         Na célula <strong>C21</strong>, haverá uma fórmula para aplicar um desconto de 12% sobre o preço de{' '}
         <strong>C18</strong>;
       </p>
-      <p className='--padding-left --bulleted'>
+      <p className='--paddingLeft --bulleted'>
         A célula <strong>E4</strong> está nomeada como <strong>Núm_produto</strong> (ela conterá o número do item
         escolhido na caixa de combinação e será vinculada à caixa);
       </p>
-      <p className='--padding-left --bulleted'>
+      <p className='--paddingLeft --bulleted'>
         As células <strong>C7</strong>, <strong>C18</strong> e <strong>C21</strong> já estão formatadas.
       </p>
       <p>
@@ -103,34 +103,34 @@ function LabAdvanced02() {
 
       <p>Para realizar as atividades deste laboratório, siga as etapas adiante:</p>
 
-      <p className='--padding-left'>
+      <p className='--paddingLeft'>
         1. Na planilha <strong>Imagens</strong>, desative as linhas de grade para que elas não apareçam na imagem
         dinâmica;
       </p>
-      <p className='--padding-left'>
+      <p className='--paddingLeft'>
         2. Na planilha <strong>Painel</strong>, desenhe uma caixa de combinação contornando a célula <strong>E4</strong>
         . Nas propriedades do controle, vincule-o a essa mesma célula (você também pode usar o nome{' '}
         <strong>Núm_produto</strong>). Como intervalo de entrada, aponte para (ou digite) o intervalo{' '}
         <strong>Produtos</strong>. Teste o controle escolhendo um dos itens;
       </p>
-      <p className='--padding-left'>
+      <p className='--paddingLeft'>
         3. Em <strong>C7</strong>, digite uma fórmula que busca, na lista <strong>Produtos</strong>, aquele cujo número
         está na célula nomeada como <strong>Núm_produto</strong>;
       </p>
-      <p className='--padding-left'>
+      <p className='--paddingLeft'>
         4. Em <strong>C18</strong>, digite uma fórmula que busca o preço correspondente ao produto escolhido no
         intervalo <strong>Preços</strong>. A célula está formatada com texto vermelho e efeito tachado;
       </p>
-      <p className='--padding-left'>
+      <p className='--paddingLeft'>
         5. Em <strong>C21</strong>, digite uma fórmula que calcula o preço final do produto, sendo que o desconto
         aplicado é de 12%;
       </p>
-      <p className='--padding-left'>
+      <p className='--paddingLeft'>
         6. Mescle as células <strong>E7:J21</strong>. Este é o local no qual aparecerá a imagem do produto escolhido, e
         o tamanho é suficiente para exibir a imagem completa do produto, sem deformações. Se desejar, aplique uma cor
         bem clara para o fundo dessa célula mesclada;
       </p>
-      <p className='--padding-left'>
+      <p className='--paddingLeft'>
         7. No <strong>Gerenciador de Nomes</strong>, confira os nomes já criados. Crie, agora, uma fórmula nomeada para
         apontar para a célula correspondente à imagem do produto escolhido. Clique no botão <strong>Novo</strong>. Na
         caixa <strong>Nome</strong>, digite <strong>Imagem</strong>. Na caixa <strong>Refere-se a</strong>, escreva uma
@@ -138,24 +138,24 @@ function LabAdvanced02() {
         <strong>Imagens</strong> e descer a quantidade de linhas equivalente ao número do produto escolhido (célula{' '}
         <strong>Núm_produto</strong>);
       </p>
-      <p className='--padding-left'>
+      <p className='--paddingLeft'>
         8. Na planilha <strong>Painel</strong>, selecione a célula mesclada <strong>E7</strong>. Copie-a e cole-a sobre
         ela mesma, porém como imagem vinculada. Na barra de fórmulas, edite a referência<strong> =$E$7</strong> para
         <strong> =Imagem</strong>, a qual representa o nome do intervalo criado no passo anterior e tecle ENTER. A
         imagem do produto já deverá aparecer;
       </p>
-      <p className='--padding-left'>9. Teste novos produtos;</p>
-      <p className='--padding-left'>
+      <p className='--paddingLeft'>9. Teste novos produtos;</p>
+      <p className='--paddingLeft'>
         10. Oculte a coluna <strong>M</strong> até o final da planilha;
       </p>
-      <p className='--padding-left'>11. Oculte a linha 24 até o final da planilha;</p>
-      <p className='--padding-left'>
+      <p className='--paddingLeft'>11. Oculte a linha 24 até o final da planilha;</p>
+      <p className='--paddingLeft'>
         12. Oculte as <strong>Linhas de Grade</strong> e os <strong>Títulos</strong> da planilha;
       </p>
-      <p className='--padding-left'>
+      <p className='--paddingLeft'>
         13. Oculte a planilha <strong>Imagens</strong>;
       </p>
-      <p className='--padding-left'>14. Salve o arquivo.</p>
+      <p className='--paddingLeft'>14. Salve o arquivo.</p>
       <p>Seu painel de consulta de produtos deverá ficar assim:</p>
 
       <ImageContainer src={pageData.images[4]} />

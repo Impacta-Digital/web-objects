@@ -60,21 +60,21 @@ function LabAdvanced03() {
         orientações adiante:
       </p>
 
-      <p className='--padding-left'>
+      <p className='--paddingLeft'>
         1. Desenhe um gráfico de velocímetro de 240° com três fatias: Ruim (vermelha), Regular (amarela) e Bom (verde);
       </p>
-      <p className='--padding-left'>
+      <p className='--paddingLeft'>
         2. Depois, crie um gráfico com o ponteiro, de modo que ele varie de 0 até o valor R$1.000.000,00;
       </p>
-      <p className='--padding-left'>
+      <p className='--paddingLeft'>
         3. O gráfico deverá ter uma caixa com texto (odômetro) mostrando o valor atual digitado e um botão em forma de
         círculo no centro do ponteiro;
       </p>
-      <p className='--padding-left'>
+      <p className='--paddingLeft'>
         4. Determine quais devem ser os valores para o gráfico do fundo do velocímetro e o <strong>Limite</strong>;
       </p>
-      <p className='--padding-left'>5. No final, o valor do ponteiro deverá ficar zerado;</p>
-      <p className='--padding-left'>6. Aplique um fundo claro à área do gráfico do fundo do velocímetro.</p>
+      <p className='--paddingLeft'>5. No final, o valor do ponteiro deverá ficar zerado;</p>
+      <p className='--paddingLeft'>6. Aplique um fundo claro à área do gráfico do fundo do velocímetro.</p>
       <p>
         Seu gráfico deverá se parecer com este (os caracteres <strong>???</strong> nas tabelas indicam as informações
         que você terá que descobrir ou calcular):
@@ -100,38 +100,38 @@ function LabAdvanced03() {
 
       <p>Siga as orientações adiante para executar este laboratório:</p>
 
-      <p className='--padding-left'>
+      <p className='--paddingLeft'>
         1. Na planilha <strong>Indicadores</strong>, calcule os complementos (quanto falta até a meta) para cada país;
       </p>
-      <p className='--padding-left'>
+      <p className='--paddingLeft'>
         2. Na mesma planilha, calcule a porcentagem de atingimento do valor de cada país até a meta. Essas células serão
         usadas para rotular o centro do anel;
       </p>
-      <p className='--padding-left'>
+      <p className='--paddingLeft'>
         3. Construa três gráficos de anel, tomando as células de <strong>Valor</strong> e <strong>Complemento</strong>{' '}
         de cada país. Aplique, a cada gráfico, um conjunto diferente de cores;
       </p>
-      <p className='--padding-left'>
+      <p className='--paddingLeft'>
         4. Posicione os três gráficos na planilha <strong>Indicadores</strong>. Faça os ajustes de tamanho e alinhamento
         para que fiquem bem distribuídos;
       </p>
-      <p className='--padding-left'>
+      <p className='--paddingLeft'>
         5. Insira caixas de texto que apontem para os nomes dos países da coluna <strong>B</strong> da planilha{' '}
         <strong>Auxiliar</strong>;
       </p>
-      <p className='--padding-left'>
+      <p className='--paddingLeft'>
         6. Insira caixas de texto com fonte grande que apontem para as porcentagens calculadas na coluna{' '}
         <strong>E</strong> da planilha <strong>Auxiliar</strong>;
       </p>
-      <p className='--padding-left'>
+      <p className='--paddingLeft'>
         7. Oculte as linhas de grade e, se desejar, as guias de planilhas e barras de rolagem horizontal e vertical da
         planilha (<strong>Arquivo</strong> / <strong>Opções</strong> / <strong>Avançado</strong>);
       </p>
-      <p className='--padding-left'>
+      <p className='--paddingLeft'>
         8. Aplique a imagem <strong>Mapa-múndi.png</strong> como plano de fundo da planilha. O arquivo se encontra na
         pasta <strong>Imagens</strong>;
       </p>
-      <p className='--padding-left'>
+      <p className='--paddingLeft'>
         9. Opcionalmente, aplique efeitos adicionais aos gráficos e às caixas de texto, como sombra ou brilho.
       </p>
       <p>Teste o dashboard pressionando F9 para gerar valores diferentes para cada país.</p>

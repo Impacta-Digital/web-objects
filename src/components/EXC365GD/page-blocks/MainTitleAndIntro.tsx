@@ -14,7 +14,7 @@ export const MainTitleAndIntro = (props: MainTitleAndIntroProps) => {
       </p>
 
       {/* - - - - - spacer */}
-      <div className='vertical-spacer' />
+      <div className='verticalSpacer' />
     </>
   );
 };
