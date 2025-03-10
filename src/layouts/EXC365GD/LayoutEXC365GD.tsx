@@ -18,7 +18,7 @@ export const LayoutEXC365GD = () => {
     <div className='exc365GD-body'>
       <FullScreen handle={fSHandle}>
         <div className='layoutContainer'>
-          <div className='layoutButtons-container'>
+          <div className='layoutButtonsContainer'>
             {isFSEnabled && <ButtonToggleFS />}
             <ButtonToggleColorMode />
           </div>

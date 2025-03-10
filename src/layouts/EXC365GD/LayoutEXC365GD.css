@@ -50,7 +50,7 @@
   color: var(--dark);
 }
 
-.exc365GD-body .layoutButtons-container {
+.exc365GD-body .layoutButtonsContainer {
   display: flex;
   gap: 0.75rem;
   top: 1rem;
@@ -64,8 +64,6 @@
   color: var(--theme);
 }
 .exc365GD-body h2 {
-  width: fit-content;
-  font-size: x-large;
   border-bottom-color: var(--theme);
 }
 
@@ -105,12 +103,7 @@
 }
 
 @media (max-width: 767px) {
-  .exc365GD-body,
-  .exc365GD-body .fullscreen {
-    width: 100dvw;
-  }
-
-  .exc365GD-body .layoutButtons-container {
+  .exc365GD-body .layoutButtonsContainer {
     top: 2.5rem;
   }
 }

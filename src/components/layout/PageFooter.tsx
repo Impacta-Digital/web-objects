@@ -9,7 +9,7 @@ export const PageFooter = ({ title, course }: PageFooterProps) => {
       {/* - - - - - spacer */}
       <div className='verticalSpacer--sm' />
 
-      <div className='wrapper'>
+      <div className='tightWrapper'>
         <div className='dashedDivider' />
 
         {/* - - - - - spacer */}
