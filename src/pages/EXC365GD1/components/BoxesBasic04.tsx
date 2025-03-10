@@ -1,6 +1,6 @@
 import styles from './BoxesBasic04.module.css';
 import colors from '../../../constants/EXC365GDcolors';
-import { ColorBox } from '../../../components/EXC365GD/content/ColorBox';
+import { ColorBox } from '../../../components/content/ColorBox';
 
 export const BoxesBasic04 = () => {
   const boxColors = [colors.purple, colors.cyan];

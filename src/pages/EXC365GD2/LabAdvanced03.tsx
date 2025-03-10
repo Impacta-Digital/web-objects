@@ -2,10 +2,10 @@ import courseData from '../../data/EXC365GD/courseData.ts';
 import imageData from './assets/imageData.ts';
 import downloadData from '../../data/EXC365GD/downloadData.ts';
 
-import { ImageContainer } from '../../components/EXC365GD/layout/ImageContainer.tsx';
-import { PageFooter } from '../../components/EXC365GD/layout/PageFooter.tsx';
-import { CardHighlight } from '../../components/EXC365GD/content/CardHighlight.tsx';
-import { LabTitleAndDownload } from '../../components/EXC365GD/page-blocks/LabTitleAndDownload.tsx';
+import { ImageContainer } from '../../components/layout/ImageContainer.tsx';
+import { PageFooter } from '../../components/layout/PageFooter.tsx';
+import { CardHighlight } from '../../components/content/CardHighlight.tsx';
+import { LabTitleAndDownload } from '../../components/page-blocks/LabTitleAndDownload.tsx';
 
 import { BoxAdvanced03 } from './components/BoxAdvanced03.tsx';
 

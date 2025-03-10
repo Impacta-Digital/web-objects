@@ -1,4 +1,4 @@
-import { ColorBox } from '../../../components/EXC365GD/content/ColorBox';
+import { ColorBox } from '../../../components/content/ColorBox';
 import colors from '../../../constants/EXC365GDcolors';
 import styles from './BoxesBasic03.module.css';
 
