@@ -5,7 +5,7 @@ import downloadData from '../../data/EXC365GD/downloadData.ts';
 
 import { ImageContainer } from '../../components/layout/ImageContainer.tsx';
 import { CardHighlight } from '../../components/content/CardHighlight.tsx';
-import { TitleAndDivider } from '../../components/layout/TitleAndDivider.tsx';
+import { TitleAndDivider } from '../../components/EXC365GD/layout/TitleAndDivider.tsx';
 import { DownloadButton } from '../../components/layout/DownloadButton.tsx';
 
 import { BoxAdvanced04 } from './components/BoxAdvanced04.tsx';

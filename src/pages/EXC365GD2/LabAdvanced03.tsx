@@ -4,7 +4,7 @@ import downloadData from '../../data/EXC365GD/downloadData.ts';
 
 import { ImageContainer } from '../../components/layout/ImageContainer.tsx';
 import { CardHighlight } from '../../components/content/CardHighlight.tsx';
-import { LabTitleAndDownload } from '../../components/page-blocks/LabTitleAndDownload.tsx';
+import { LabTitleAndDownload } from '../../components/EXC365GD/page-blocks/LabTitleAndDownload.tsx';
 
 import { BoxAdvanced03 } from './components/BoxAdvanced03.tsx';
 

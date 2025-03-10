@@ -1,4 +1,4 @@
-import { PlayerAndRevealButton } from '../content/PlayerAndRevealButton';
+import { PlayerAndRevealButton } from '../../content/PlayerAndRevealButton';
 
 export interface ViewResponseButtonProps {
   videoId: string;
