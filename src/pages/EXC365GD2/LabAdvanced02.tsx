@@ -4,9 +4,7 @@ import videoData from '../../data/EXC365GD/videoData.ts';
 import downloadData from '../../data/EXC365GD/downloadData.ts';
 
 import { ImageContainer } from '../../components/layout/ImageContainer.tsx';
-import { PageFooter } from '../../components/layout/PageFooter.tsx';
 import { CardHighlight } from '../../components/content/CardHighlight.tsx';
-
 import { MainTitleAndIntro } from '../../components/page-blocks/MainTitleAndIntro.tsx';
 import { LabTitleAndDownload } from '../../components/page-blocks/LabTitleAndDownload.tsx';
 import { ViewResponseButton } from '../../components/page-blocks/ViewResponseButton.tsx';
@@ -161,8 +159,6 @@ function LabAdvanced02() {
       <ImageContainer src={pageData.images[4]} />
 
       <ViewResponseButton videoId={pageData.videos![0]} />
-
-      <PageFooter title='Mãos à Obra!' course={pageData.course} />
     </>
   );
 }

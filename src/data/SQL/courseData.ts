@@ -1,4 +1,4 @@
-export const courseTitle = 'SQL - Criando e Manipulando Banco de Dados';
+export const courseTitle = 'SQL – Criando e Manipulando Banco de Dados';
 
 export const classTitles = {
   intro: 'Introdução ao SQL Server',

@@ -16,6 +16,7 @@ import Advanced03 from '../pages/EXC365GD2/LabAdvanced03';
 import Advanced04 from '../pages/EXC365GD2/LabAdvanced04';
 
 import { pageId as SQL } from './SQL';
+import { courseTitle } from '../data/SQL/courseData';
 
 const router = createBrowserRouter([
   {
@@ -47,7 +48,7 @@ const router = createBrowserRouter([
       },
       {
         path: SQL.path,
-        element: <MainLayout />,
+        element: <MainLayout footerTitle={courseTitle} />,
         children: [
           { index: true, element: <HomePage /> },
           { path: SQL.intro, element: <h1>intro</h1> },

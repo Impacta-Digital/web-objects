@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-/* - - - - - 📌 VARIABLES */
+/* - - - - - 📌 VARS */
 
 :root {
   /* - - - - - fonts */
@@ -58,8 +58,6 @@
   right: 1rem;
 }
 
-/* - - - - - 📌 TYPOGRAPHY */
-
 .exc365GD-body h1 {
   color: var(--theme);
 }
@@ -71,23 +69,14 @@
   background: var(--theme--opacity40);
 }
 
-.exc365GD-body .layoutButton svg {
-  fill: var(--light);
-}
-
-.exc365GD-body .largeButton {
-  color: var(--light);
-}
-.exc365GD-body .largeButtonIcon {
-  fill: var(--light);
-}
-
 .exc365GD-body .pageFooter .title {
-  color: var(--theme);
+  color: var(--light);
 }
 
 .exc365GD-body .button {
   background: var(--blue-gray);
+  color: var(--light);
+  fill: var(--light);
 }
 
 .exc365GD-body .codeLine {

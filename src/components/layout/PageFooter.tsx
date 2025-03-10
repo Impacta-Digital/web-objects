@@ -1,9 +1,8 @@
 export interface PageFooterProps {
-  title: string;
-  course: string;
+  title: React.ReactNode;
 }
 
-export const PageFooter = ({ title, course }: PageFooterProps) => {
+export const PageFooter = ({ title }: PageFooterProps) => {
   return (
     <footer className='pageFooter'>
       {/* - - - - - spacer */}
@@ -16,7 +15,7 @@ export const PageFooter = ({ title, course }: PageFooterProps) => {
         <div className='verticalSpacer--sm' />
 
         <p>
-          <span className='title'>{title}</span> <span className='course'>{course}</span>
+          <span className='title'>{title}</span>
           <br />
           <span className='copyright'>© {new Date().getFullYear()} Impacta Digital</span>
         </p>

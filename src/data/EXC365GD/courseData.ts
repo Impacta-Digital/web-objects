@@ -1,4 +1,4 @@
-const courseTitle = 'Excel 365 – Gráficos e Dashboards';
+export const courseTitle = 'Excel 365 – Gráficos e Dashboards';
 
 const courseData = {
   EXC365GD1: `${courseTitle} | Básico`,

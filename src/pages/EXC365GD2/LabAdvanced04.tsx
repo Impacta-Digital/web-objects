@@ -4,7 +4,6 @@ import imageData from './assets/imageData.ts';
 import downloadData from '../../data/EXC365GD/downloadData.ts';
 
 import { ImageContainer } from '../../components/layout/ImageContainer.tsx';
-import { PageFooter } from '../../components/layout/PageFooter.tsx';
 import { CardHighlight } from '../../components/content/CardHighlight.tsx';
 import { TitleAndDivider } from '../../components/layout/TitleAndDivider.tsx';
 import { DownloadButton } from '../../components/layout/DownloadButton.tsx';
@@ -868,8 +867,6 @@ function LabAdvanced04() {
       <p>O seu dashboard está concluído:</p>
 
       <ImageContainer src={pageData.images[31]} />
-
-      <PageFooter title='Mãos à Obra!' course={pageData.course} />
     </>
   );
 }
