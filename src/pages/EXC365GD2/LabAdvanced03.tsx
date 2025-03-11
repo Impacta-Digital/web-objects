@@ -8,7 +8,7 @@ import { LabTitleAndDownload } from '../../components/EXC365GD/page-blocks/LabTi
 
 import { BoxAdvanced03 } from './components/BoxAdvanced03.tsx';
 
-import type PageData from '../../types/EXC365GD/PageData.ts';
+import type PageData from '../../types/PageData.ts';
 
 function LabAdvanced03() {
   const pageData: PageData = {
@@ -20,7 +20,7 @@ function LabAdvanced03() {
 
   return (
     <>
-      <LabTitleAndDownload classTitle={pageData.classTitle} downloadPath={pageData.download} />
+      <LabTitleAndDownload classTitle={pageData.classTitle} downloadPath={pageData.download!} />
 
       <h2>Laboratório 1 – Gráfico do Termômetro</h2>
 

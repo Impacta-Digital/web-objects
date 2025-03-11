@@ -11,7 +11,7 @@ import { ViewResponseButton } from '../../components/EXC365GD/page-blocks/ViewRe
 
 import { BoxesAdvanced02 } from './components/BoxesAdvanced02.tsx';
 
-import type PageData from '../../types/EXC365GD/PageData.ts';
+import type PageData from '../../types/PageData.ts';
 
 function LabAdvanced02() {
   const pageData: PageData = {
@@ -46,7 +46,7 @@ function LabAdvanced02() {
 
       <BoxesAdvanced02 />
 
-      <LabTitleAndDownload classTitle={pageData.classTitle} downloadPath={pageData.download} />
+      <LabTitleAndDownload classTitle={pageData.classTitle} downloadPath={pageData.download!} />
 
       <h2>Laboratório – Usando a técnica das imagens dinâmicas</h2>
 

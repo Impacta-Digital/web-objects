@@ -11,7 +11,7 @@ import { SingleDownloadButton } from '../../components/layout/SingleDownloadButt
 import { BoxAdvanced04 } from './components/BoxAdvanced04.tsx';
 import { TableAdvanced04 } from './components/TableAdvanced04.tsx';
 
-import type PageData from '../../types/EXC365GD/PageData.ts';
+import type PageData from '../../types/PageData.ts';
 
 function LabAdvanced04() {
   const pageData: PageData = {

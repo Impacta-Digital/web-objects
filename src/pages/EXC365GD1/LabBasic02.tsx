@@ -11,7 +11,7 @@ import { ViewResponseButton } from '../../components/EXC365GD/page-blocks/ViewRe
 
 import { BoxBasic02 } from './components/BoxBasic02.tsx';
 
-import type PageData from '../../types/EXC365GD/PageData.ts';
+import type PageData from '../../types/PageData.ts';
 
 function LabBasic02() {
   const pageData: PageData = {
@@ -76,7 +76,7 @@ function LabBasic02() {
         da localização de outro valor ou, então, por sua posição de linha e coluna dentro da matriz.
       </p>
 
-      <LabTitleAndDownload classTitle={pageData.classTitle} downloadPath={pageData.download} />
+      <LabTitleAndDownload classTitle={pageData.classTitle} downloadPath={pageData.download!} />
 
       <h2>Laboratório – Utilizando fórmulas e funções avançadas</h2>
 

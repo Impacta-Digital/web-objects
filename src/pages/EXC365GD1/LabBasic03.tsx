@@ -11,7 +11,7 @@ import { ViewResponseButton } from '../../components/EXC365GD/page-blocks/ViewRe
 
 import { BoxesBasic03 } from './components/BoxesBasic03.tsx';
 
-import type PageData from '../../types/EXC365GD/PageData.ts';
+import type PageData from '../../types/PageData.ts';
 
 function LabBasic03() {
   const pageData: PageData = {
@@ -61,7 +61,7 @@ function LabBasic03() {
 
       <BoxesBasic03 />
 
-      <LabTitleAndDownload classTitle={pageData.classTitle} downloadPath={pageData.download} />
+      <LabTitleAndDownload classTitle={pageData.classTitle} downloadPath={pageData.download!} />
 
       <h2>Laboratório A – Trabalhando com controles de formulário</h2>
 

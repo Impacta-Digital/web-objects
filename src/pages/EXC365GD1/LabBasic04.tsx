@@ -11,7 +11,7 @@ import { ViewResponseButton } from '../../components/EXC365GD/page-blocks/ViewRe
 
 import { BoxesBasic04 } from './components/BoxesBasic04.tsx';
 
-import type PageData from '../../types/EXC365GD/PageData.ts';
+import type PageData from '../../types/PageData.ts';
 
 function LabBasic04() {
   const pageData: PageData = {
@@ -63,7 +63,7 @@ function LabBasic04() {
 
       <ImageContainer src={pageData.images[6]} />
 
-      <LabTitleAndDownload classTitle={pageData.classTitle} downloadPath={pageData.download} />
+      <LabTitleAndDownload classTitle={pageData.classTitle} downloadPath={pageData.download!} />
 
       <h2>Laboratório 1 – Eixo secundário e combinação de dois tipos de gráficos</h2>
 

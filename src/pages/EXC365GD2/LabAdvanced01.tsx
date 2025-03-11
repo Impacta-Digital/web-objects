@@ -11,7 +11,7 @@ import { ViewResponseButton } from '../../components/EXC365GD/page-blocks/ViewRe
 
 import { BoxesAdvanced01 } from './components/BoxesAdvanced01.tsx';
 
-import type PageData from '../../types/EXC365GD/PageData.ts';
+import type PageData from '../../types/PageData.ts';
 
 function LabAdvanced01() {
   const pageData: PageData = {
@@ -30,7 +30,7 @@ function LabAdvanced01() {
 
       <BoxesAdvanced01 />
 
-      <LabTitleAndDownload classTitle={pageData.classTitle} downloadPath={pageData.download} />
+      <LabTitleAndDownload classTitle={pageData.classTitle} downloadPath={pageData.download!} />
 
       <h2>Laboratório 1 – Destacando o maior valor do ano</h2>
 
