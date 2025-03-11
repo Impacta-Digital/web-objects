@@ -1,14 +1,10 @@
 import { IconFolderDownload } from '../icons/FolderDownload';
+import type { DownloadButtonProps } from '../types/DownloadButtonProps';
 
-export interface DownloadButtonProps {
-  filePath: string;
-  buttonText: string;
-}
-
-export const SingleDownloadButton = ({ filePath, buttonText }: DownloadButtonProps) => {
+export const SingleDownloadButton = ({ buttonText, filePath, hyperlink }: DownloadButtonProps) => {
   return (
     <div className='largeButtonContainer'>
-      <a href={filePath} download>
+      <a href={filePath ?? hyperlink} download={!!filePath} target={filePath ? '_self' : '_blank'} rel='noreferrer'>
         <div className='button largeButton'>
           <div className='largeButtonIcon'>
             <IconFolderDownload />
