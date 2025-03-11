@@ -11,7 +11,7 @@ export const ColorBox = ({ color, content }: ColorBoxProps) => {
   const borderColor = makeTransparent(color, 25);
 
   return (
-    <div className={styles['color-box']} style={{ background, borderColor }}>
+    <div className={styles.colorBox} style={{ background, borderColor }}>
       {content}
     </div>
   );

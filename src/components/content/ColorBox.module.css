@@ -1,19 +1,19 @@
-.color-box {
+.colorBox {
   padding: 1rem;
-  border: 0.25rem solid;
+  border: 0.125rem solid;
   box-shadow: var(--soft-shadow);
 }
 
-.color-box strong {
+.colorBox strong {
   font-weight: 500;
   text-decoration: underline 1px;
 }
 
-.color-box p {
+.colorBox p {
   font-size: medium;
   text-align: left;
 }
 
-.color-box p:last-of-type {
+.colorBox p:last-of-type {
   margin-bottom: unset;
 }
