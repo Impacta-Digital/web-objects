@@ -5,7 +5,7 @@ export interface DownloadButtonProps {
   buttonText: string;
 }
 
-export const DownloadButton = ({ filePath, buttonText }: DownloadButtonProps) => {
+export const SingleDownloadButton = ({ filePath, buttonText }: DownloadButtonProps) => {
   return (
     <div className='largeButtonContainer'>
       <a href={filePath} download>

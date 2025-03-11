@@ -6,7 +6,7 @@ import downloadData from '../../data/EXC365GD/downloadData.ts';
 import { ImageContainer } from '../../components/layout/ImageContainer.tsx';
 import { CardHighlight } from '../../components/content/CardHighlight.tsx';
 import { TitleAndDivider } from '../../components/EXC365GD/layout/TitleAndDivider.tsx';
-import { DownloadButton } from '../../components/layout/DownloadButton.tsx';
+import { SingleDownloadButton } from '../../components/layout/SingleDownloadButton.tsx';
 
 import { BoxAdvanced04 } from './components/BoxAdvanced04.tsx';
 import { TableAdvanced04 } from './components/TableAdvanced04.tsx';
@@ -30,7 +30,7 @@ function LabAdvanced04() {
         o material de apoio clicando no botão a seguir:
       </p>
 
-      <DownloadButton filePath={pageData.download} buttonText='Material de Apoio' />
+      <SingleDownloadButton filePath={pageData.download} buttonText='Material de Apoio' />
 
       {/* - - - - - spacer */}
       <div className='verticalSpacer' />

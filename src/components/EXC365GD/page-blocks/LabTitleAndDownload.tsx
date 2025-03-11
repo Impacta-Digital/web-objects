@@ -1,5 +1,5 @@
 import { TitleAndDivider } from '../layout/TitleAndDivider';
-import { DownloadButton } from '../../layout/DownloadButton';
+import { SingleDownloadButton } from '../../layout/SingleDownloadButton';
 
 export interface LabTitleAndDownloadProps {
   classTitle: string;
@@ -23,7 +23,7 @@ export const LabTitleAndDownload = (props: LabTitleAndDownloadProps) => {
         clicando no botão a seguir:
       </p>
 
-      <DownloadButton filePath={downloadPath} buttonText='Material de Apoio' />
+      <SingleDownloadButton filePath={downloadPath} buttonText='Material de Apoio' />
 
       {/* - - - - - spacer */}
       <div className='verticalSpacer' />
