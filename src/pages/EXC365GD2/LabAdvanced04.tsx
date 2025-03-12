@@ -4,8 +4,8 @@ import imageData from './assets/imageData.ts';
 import downloadData from '../../data/EXC365GD/downloadData.ts';
 
 import { ImageContainer } from '../../components/layout/ImageContainer.tsx';
-import { CardHighlight } from '../../components/content/CardHighlight.tsx';
-import { TitleAndDivider } from '../../components/EXC365GD/layout/TitleAndDivider.tsx';
+import { CardHighlight } from '../../components/EXC365GD/content/CardHighlight.tsx';
+import { TitleAndDivider } from '../../components/layout/TitleAndDivider.tsx';
 import { SingleDownloadButton } from '../../components/layout/SingleDownloadButton.tsx';
 
 import { BoxAdvanced04 } from './components/BoxAdvanced04.tsx';
@@ -23,7 +23,7 @@ function LabAdvanced04() {
 
   return (
     <>
-      <TitleAndDivider title='Mãos à Obra!' subheading={pageData.classTitle} />
+      <TitleAndDivider title='Mãos à Obra!' subheading={pageData.classTitle} borderColor={colors.theme} />
 
       <p>
         Estas atividades complementam o aprendizado. Faça-as usando os conceitos aprendidos nas aulas anteriores. Baixe

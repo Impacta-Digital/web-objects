@@ -4,7 +4,7 @@ import videoData from '../../data/EXC365GD/videoData.ts';
 import downloadData from '../../data/EXC365GD/downloadData.ts';
 
 import { ImageContainer } from '../../components/layout/ImageContainer.tsx';
-import { CardHighlight } from '../../components/content/CardHighlight.tsx';
+import { CardHighlight } from '../../components/EXC365GD/content/CardHighlight.tsx';
 import { MainTitleAndIntro } from '../../components/EXC365GD/page-blocks/MainTitleAndIntro.tsx';
 import { LabTitleAndDownload } from '../../components/EXC365GD/page-blocks/LabTitleAndDownload.tsx';
 import { ViewResponseButton } from '../../components/EXC365GD/page-blocks/ViewResponseButton.tsx';
