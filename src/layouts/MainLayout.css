@@ -1,0 +1,33 @@
+h1 {
+  color: var(--accentPrimary);
+}
+h2 {
+  border-bottom-color: var(--accentSecondary);
+}
+
+.floatingButtonContainer {
+  display: flex;
+  justify-content: right;
+  padding-bottom: 1rem;
+  position: sticky;
+}
+
+.button {
+  color: var(--fg);
+  background: var(--accentPrimaryDeep);
+}
+
+.imageLabel {
+  opacity: 0.75;
+  font-style: italic;
+}
+
+.pageFooter .title {
+  color: var(--accentPrimary);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .button:hover {
+    background: var(--accentPrimary);
+  }
+}
