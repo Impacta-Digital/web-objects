@@ -8,6 +8,7 @@ import { courseTitle, classTitles } from '../../data/SQL/courseData';
 
 import type PageData from '../../types/PageData';
 import { IntroBoxAndImage } from './components/IntroBoxAndImage';
+import { CodeBox } from '../../components/content/CodeBox';
 
 export const IntroPage = () => {
   const pageData: PageData = {
@@ -196,12 +197,7 @@ export const IntroPage = () => {
         <ol className='--paddingLeft' style={{ ...commonListStyles, listStyle: 'upper-alpha inside' }}>
           <li>
             Na nova query, digite o seguinte comando:
-            <br />
-            <div className='verticalSpacer--sm' />
-            <span className='--paddingLeft'>
-              <b>USE</b> PEDIDOS
-            </span>
-            <div className='verticalSpacer' />
+            <CodeBox lang='sql' codeString='USE PEDIDOS' />
           </li>
           <li>
             Execute o comando clicando em <strong>Execute</strong> ou pressionando <strong>F5</strong>.
