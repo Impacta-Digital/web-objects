@@ -1,16 +1,16 @@
 import { ImageContainer } from '../../components/layout/ImageContainer';
 import { TitleAndDivider } from '../../components/layout/TitleAndDivider';
 import { MultipleDownloadButtons } from '../../components/layout/MultipleDownloadButtons';
+import { CodeBox } from '../../components/content/CodeBox';
+import { IntroBoxAndImage } from './components/IntroBoxAndImage';
 
 import imageData from './assets/imageData';
 import { darkTheme } from '../../constants/colors';
 import { courseTitle, classTitles } from '../../data/SQL/courseData';
 
 import type PageData from '../../types/PageData';
-import { IntroBoxAndImage } from './components/IntroBoxAndImage';
-import { CodeBox } from '../../components/content/CodeBox';
 
-export const IntroPage = () => {
+export const SQL_IntroPage = () => {
   const pageData: PageData = {
     classTitle: classTitles.intro,
     course: courseTitle,
@@ -33,7 +33,7 @@ export const IntroPage = () => {
     <div className='contentContainer'>
       <div className='wrapper'>
         <TitleAndDivider
-          title={courseTitle}
+          title={pageData.course}
           subheading='Como anexar o Banco de Dados'
           borderColor={darkTheme.accents.primary}
         />

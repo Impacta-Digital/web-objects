@@ -1,4 +1,4 @@
-import { PlayerAndRevealButton } from '../../content/PlayerAndRevealButton';
+import { ButtonRevealPlayer } from '../../content/ButtonRevealPlayer';
 
 export interface ViewResponseButtonProps {
   videoId: string;
@@ -10,7 +10,7 @@ export const ViewResponseButton = (props: ViewResponseButtonProps) => {
       {/* - - - - - spacer */}
       <div className='verticalSpacer' />
 
-      <PlayerAndRevealButton buttonText='Ver Laboratório Resolvido' {...props} />
+      <ButtonRevealPlayer buttonText='Ver Laboratório Resolvido' {...props} />
 
       {/* - - - - - spacer */}
       <div className='verticalSpacer' />
