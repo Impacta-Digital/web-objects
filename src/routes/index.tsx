@@ -7,13 +7,13 @@ import { HomePage } from '../pages/HomePage';
 import { LayoutEXC365GD } from '../layouts/EXC365GD/LayoutEXC365GD';
 import { pageId as EXC365GD } from './EXC365GD';
 
-import Basic02 from '../pages/EXC365GD1/LabBasic02';
-import Basic03 from '../pages/EXC365GD1/LabBasic03';
-import Basic04 from '../pages/EXC365GD1/LabBasic04';
-import Advanced01 from '../pages/EXC365GD2/LabAdvanced01';
-import Advanced02 from '../pages/EXC365GD2/LabAdvanced02';
-import Advanced03 from '../pages/EXC365GD2/LabAdvanced03';
-import Advanced04 from '../pages/EXC365GD2/LabAdvanced04';
+import Basic02 from '../pages/EXC365GD/LabBasic02';
+import Basic03 from '../pages/EXC365GD/LabBasic03';
+import Basic04 from '../pages/EXC365GD/LabBasic04';
+import Advanced01 from '../pages/EXC365GD/LabAdvanced01';
+import Advanced02 from '../pages/EXC365GD/LabAdvanced02';
+import Advanced03 from '../pages/EXC365GD/LabAdvanced03';
+import Advanced04 from '../pages/EXC365GD/LabAdvanced04';
 
 import { pageId as SQL } from './SQL';
 import { courseTitle } from '../data/SQL/courseData';
