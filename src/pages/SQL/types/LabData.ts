@@ -1,19 +1,23 @@
-interface SectionTitle {
+interface SectionBase {
+  sectionType: 'title' | 'paragraph' | 'list' | 'response';
+}
+
+interface SectionTitle extends SectionBase {
   sectionType: 'title';
   content: string;
 }
 
-interface SectionParagraph {
+interface SectionParagraph extends SectionBase {
   sectionType: 'paragraph';
   content: string;
 }
 
-interface SectionList {
+interface SectionList extends SectionBase {
   sectionType: 'list';
   content: string[];
 }
 
-interface SectionResponse {
+interface SectionResponse extends SectionBase {
   sectionType: 'response';
   content: string;
 }
