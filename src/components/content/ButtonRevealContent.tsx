@@ -6,12 +6,13 @@ import { IconChevronDown } from '../icons/ChevronDown';
 import { IconChevronRight } from '../icons/ChevronRight';
 
 export interface ButtonRevealContentProps {
-  buttonText: string;
   content: React.ReactNode;
+  buttonText: string;
+  altButtonText?: string;
   alignLeft?: boolean;
 }
 
-export const ButtonRevealContent = ({ buttonText, content, alignLeft }: ButtonRevealContentProps) => {
+export const ButtonRevealContent = ({ content, buttonText, altButtonText, alignLeft }: ButtonRevealContentProps) => {
   const [showContent, setShowContent] = useState<boolean>(false);
 
   return (
@@ -19,7 +20,7 @@ export const ButtonRevealContent = ({ buttonText, content, alignLeft }: ButtonRe
       <div className='largeButtonContainer' style={{ justifyContent: alignLeft ? 'flex-start' : 'center' }}>
         <div className='button largeButton' onClick={() => setShowContent((prev) => !prev)}>
           <div className='largeButtonIcon'>{showContent ? <IconChevronDown /> : <IconChevronRight />}</div>
-          {buttonText}
+          {showContent && altButtonText ? altButtonText : buttonText}
         </div>
       </div>
 
