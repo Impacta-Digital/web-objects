@@ -17,6 +17,7 @@ import intro16 from './intro16.jpg';
 import intro17 from './intro17.png';
 import intro18 from './intro18.png';
 import intro19 from './intro19.png';
+import class2lab1 from './class2-lab1.png';
 
 const imageData = {
   IntroPage: [
@@ -40,6 +41,7 @@ const imageData = {
     intro18,
     intro19,
   ],
+  Class02: [class2lab1],
 };
 
 export default imageData;
