@@ -4,9 +4,9 @@ import { MultipleDownloadButtons } from '../../components/layout/MultipleDownloa
 import { CodeBox } from '../../components/content/CodeBox';
 import { IntroBoxAndImage } from './components/IntroBoxAndImage';
 
-import imageData from './assets/imageData';
+import imageData from './data/imageData';
 import { darkTheme } from '../../constants/colors';
-import { courseTitle, classTitles } from '../../data/SQL/courseData';
+import { courseTitle, classTitles } from './data/courseData';
 
 import type PageData from '../../types/PageData';
 

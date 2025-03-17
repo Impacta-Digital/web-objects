@@ -7,7 +7,7 @@ import { useFullScreen } from '../../hooks/useFullScreen';
 import { ButtonToggleColorMode } from './components/ButtonToggleColorMode';
 import { ButtonToggleFS } from './components/ButtonToggleFS';
 import { PageFooter } from '../../components/layout/PageFooter';
-import { courseTitle } from '../../data/EXC365GD/courseData';
+import { courseTitle } from '../../pages/EXC365GD/data/courseData';
 import colors from '../../constants/EXC365GDcolors';
 
 export const LayoutEXC365GD = () => {

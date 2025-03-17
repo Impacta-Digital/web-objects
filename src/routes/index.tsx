@@ -16,7 +16,7 @@ import Advanced03 from '../pages/EXC365GD/LabAdvanced03';
 import Advanced04 from '../pages/EXC365GD/LabAdvanced04';
 
 import { pageId as SQL } from './SQL';
-import { courseTitle } from '../data/SQL/courseData';
+import { courseTitle } from '../pages/SQL/data/courseData';
 import { SQL_IntroPage } from '../pages/SQL/IntroPage';
 import { SQL_Lab02 } from '../pages/SQL/Lab02';
 

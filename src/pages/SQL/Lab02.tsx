@@ -2,12 +2,13 @@ import { ImageContainer } from '../../components/layout/ImageContainer';
 import { TitleAndDivider } from '../../components/layout/TitleAndDivider';
 import { LabSection } from './components/LabSection';
 
-import imageData from './assets/imageData';
+import imageData from './data/imageData';
 import lab02Data from './data/lab02Data';
-import { classTitles } from '../../data/SQL/courseData';
+import { classTitles } from './data/courseData';
 import { darkTheme } from '../../constants/colors';
 
 import type PageData from '../../types/PageData';
+import { LabConclusion } from './components/LabConclusion';
 
 export const SQL_Lab02 = () => {
   const pageData: Partial<PageData> = {
@@ -37,6 +38,8 @@ export const SQL_Lab02 = () => {
       {lab02Data.map((sections, index) => (
         <LabSection key={`section-${index}`} {...{ sections }} />
       ))}
+
+      <LabConclusion />
     </div>
   );
 };

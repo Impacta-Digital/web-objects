@@ -1,6 +1,6 @@
-import courseData from '../../data/EXC365GD/courseData.ts';
+import courseData from './data/courseData.ts';
 import imageData from './assets/imageData.ts';
-import downloadData from '../../data/EXC365GD/downloadData.ts';
+import downloadData from './data/downloadData.ts';
 
 import { ImageContainer } from '../../components/layout/ImageContainer.tsx';
 import { CardHighlight } from '../../components/EXC365GD/content/CardHighlight.tsx';
