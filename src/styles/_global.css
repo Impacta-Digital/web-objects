@@ -98,6 +98,11 @@ p.--bulleted::before {
   margin-bottom: -0.5rem;
 }
 
+em {
+  text-decoration: underline 1px solid;
+  text-decoration-skip-ink: all;
+}
+
 /* - - - - - 📌 LAYOUT */
 
 .layoutContainer {
