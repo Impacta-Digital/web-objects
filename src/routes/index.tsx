@@ -19,6 +19,7 @@ import { pageId as SQL } from './SQL';
 import { courseTitle } from '../pages/SQL/data/courseData';
 import { SQL_IntroPage } from '../pages/SQL/IntroPage';
 import { SQL_Lab02 } from '../pages/SQL/Lab02';
+import { SQL_Lab05 } from '../pages/SQL/Lab05';
 
 const router = createBrowserRouter([
   {
@@ -55,7 +56,7 @@ const router = createBrowserRouter([
           { index: true, element: <HomePage /> },
           { path: SQL.intro, element: <SQL_IntroPage /> },
           { path: SQL[2], element: <SQL_Lab02 /> },
-          { path: SQL[5], element: <h1>webObject 5</h1> },
+          { path: SQL[5], element: <SQL_Lab05 /> },
           { path: SQL[6].A, element: <h1>webObject 6A</h1> },
           { path: SQL[6].B, element: <h1>webObject 6B</h1> },
           { path: SQL[8], element: <h1>webObject 8</h1> },
