@@ -103,6 +103,13 @@ em {
   text-decoration-skip-ink: all;
 }
 
+a {
+  color: var(--accentSecondary);
+  text-decoration: underline 1px solid;
+  text-decoration-skip-ink: all;
+  transition: all 0.3s ease;
+}
+
 /* - - - - - 📌 LAYOUT */
 
 .layoutContainer {
@@ -236,6 +243,10 @@ img {
   .button:hover {
     transform: translateY(2px);
     box-shadow: none;
+  }
+
+  a:hover {
+    color: unset;
   }
 }
 
