@@ -8,7 +8,10 @@ export const MultipleDownloadButtons = ({
   buttons: DownloadButtonProps[];
   textColor: string;
 }) => {
-  const buttonStyle: React.CSSProperties = textColor ? { color: textColor, fill: textColor } : {};
+  const buttonStyle: React.CSSProperties = {
+    ...(textColor ? { color: textColor, fill: textColor } : {}),
+    textDecoration: 'none',
+  };
 
   return (
     <div className='largeButtonContainer'>
