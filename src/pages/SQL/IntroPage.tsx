@@ -8,10 +8,8 @@ import imageData from './data/imageData';
 import { darkTheme } from '../../constants/colors';
 import { courseTitle, classTitles } from './data/courseData';
 
-import type PageData from '../../types/PageData';
-
 export const SQL_IntroPage = () => {
-  const pageData: PageData = {
+  const pageData = {
     classTitle: classTitles.intro,
     course: courseTitle,
     images: imageData.IntroPage,
@@ -49,7 +47,7 @@ export const SQL_IntroPage = () => {
           de dados <strong>PEDIDOS</strong>, disponível também a seguir.
         </p>
 
-        <MultipleDownloadButtons buttons={pageData.multipleDownloads!} textColor={darkTheme.foreground} />
+        <MultipleDownloadButtons buttons={pageData.multipleDownloads} textColor={darkTheme.foreground} />
       </div>
 
       <div className='wrapper'>

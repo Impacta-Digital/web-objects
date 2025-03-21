@@ -7,9 +7,6 @@ import { classTitles } from './data/courseData';
 import imageData from './data/imageData';
 import lab02Data from './data/lab02Data';
 
-// 🐞 TODO:/FIXME:
-// import type PageData from '../../types/PageData';
-
 export const SQL_Lab02 = () => {
   const pageData = {
     classTitle: classTitles[2],
