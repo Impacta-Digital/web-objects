@@ -39,9 +39,7 @@ export const SQL_Lab06B = () => {
         />
       </div>
 
-      <div className='wrapper'>
-        <h1 style={{ color: darkTheme.foreground, borderBottom: '2px solid' }}>LABORATÓRIO B</h1>
-      </div>
+      <h1 style={{ color: darkTheme.foreground, borderBottom: '2px solid' }}>LABORATÓRIO B</h1>
 
       {pageData.labData.map((sections, index) => (
         <LabSection key={`section-${index}`} {...{ sections }} />
