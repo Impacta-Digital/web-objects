@@ -23,6 +23,7 @@ import { SQL_Lab05 } from '../pages/SQL/Lab05';
 import { SQL_Lab06A } from '../pages/SQL/Lab06A';
 import { SQL_Lab06B } from '../pages/SQL/Lab06B';
 import { SQL_Lab08 } from '../pages/SQL/Lab08';
+import { SQL_Lab09 } from '../pages/SQL/Lab09';
 
 const router = createBrowserRouter([
   {
@@ -63,7 +64,7 @@ const router = createBrowserRouter([
           { path: SQL[6].A, element: <SQL_Lab06A /> },
           { path: SQL[6].B, element: <SQL_Lab06B /> },
           { path: SQL[8], element: <SQL_Lab08 /> },
-          { path: SQL[9], element: <h1>webObject 9</h1> },
+          { path: SQL[9], element: <SQL_Lab09 /> },
           { path: SQL[10], element: <h1>webObject 10</h1> },
           { path: SQL[12], element: <h1>webObject 12</h1> },
           { path: SQL[13], element: <h1>webObject 13</h1> },
