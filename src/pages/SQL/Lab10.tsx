@@ -8,9 +8,6 @@ import { darkTheme } from '../../constants/colors';
 import { classTitles } from './data/courseData';
 import lab10Data from './data/lab10Data';
 
-// A – Utilizando subconsultas, realize as consultas adiante:
-// Dentro do pacote zip você encontrará uma imagem com o "Modelo Relacional do banco de dados PEDIDOS" e da Tabela "TB_EMPREGADO" para consulta.
-
 export const SQL_Lab10 = () => {
   const pageData = {
     classTitle: classTitles[10],

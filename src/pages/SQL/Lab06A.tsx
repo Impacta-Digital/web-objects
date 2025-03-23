@@ -42,7 +42,7 @@ export const SQL_Lab06A = () => {
 
       {pageData.labData.map((lab, labIndex) => (
         <>
-          <h1 style={{ color: darkTheme.foreground, borderBottom: '2px solid' }}>LABORATÓRIO A{labIndex + 1}</h1>
+          <h1 style={{ color: darkTheme.accents.primary, borderBottom: '2px solid' }}>LABORATÓRIO A{labIndex + 1}</h1>
 
           {lab.map((sections, sectionsIndex) => (
             <LabSection key={`lab${labIndex}-section${sectionsIndex}`} {...{ sections }} />
