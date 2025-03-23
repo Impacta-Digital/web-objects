@@ -1,7 +1,3 @@
-// Laboratório 1
-// A – Com o banco de dados PEDIDOS, resolva os exercícios:
-// Dentro do pacote zip você encontrará uma imagem com o "Modelo Relacional do banco de dados PEDIDOS" para consulta.
-
 import { LabTitle } from './components/LabTitle';
 import { LabSection } from './components/LabSection';
 import { LabConclusion } from './components/LabConclusion';
