@@ -75,7 +75,7 @@ const lab12AData: LabData = [lab12A_1, lab12A_2, lab12A_3, lab12A_4];
 const lab12B_1: LabSections = [
   {
     sectionType: 'title',
-    content: 'SET UP',
+    content: 'PREPARE O LABORATÓRIO',
   },
   {
     sectionType: 'paragraph',
