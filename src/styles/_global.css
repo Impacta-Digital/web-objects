@@ -31,6 +31,8 @@
   --alertInfo: var(--amberYellow);
   --alertSuccess: var(--emeraldGreen);
 
+  --higlightBg: color-mix(in srgb, var(--amberYellow) 25%, transparent);
+
   --soft-shadow: 2px 2px 2px #0000004d;
 }
 
@@ -89,6 +91,19 @@ p.--bulleted::before {
   content: '⇢';
   padding-right: 0.5rem;
 }
+
+a {
+  color: var(--accentSecondary);
+  text-decoration: underline 1px solid;
+  text-decoration-skip-ink: all;
+  transition: all 0.3s ease;
+}
+
+em {
+  text-decoration: underline 1px solid;
+  text-decoration-skip-ink: all;
+}
+
 .subheading {
   text-transform: uppercase;
   position: relative;
@@ -98,16 +113,17 @@ p.--bulleted::before {
   margin-bottom: -0.5rem;
 }
 
-em {
-  text-decoration: underline 1px solid;
-  text-decoration-skip-ink: all;
+.code {
+  font-family: var(--mono-font);
+  font-size: medium;
 }
 
-a {
-  color: var(--accentSecondary);
-  text-decoration: underline 1px solid;
-  text-decoration-skip-ink: all;
-  transition: all 0.3s ease;
+.highlight {
+  background: var(--higlightBg);
+  margin: 0 0.25rem;
+  padding: 0 0.25rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--amberYellow);
 }
 
 /* - - - - - 📌 LAYOUT */
