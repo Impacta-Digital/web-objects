@@ -1,3 +1,4 @@
+import { ImageContainer } from '../../components/layout/ImageContainer';
 import { LabTitle } from './components/LabTitle';
 import { LabSection } from './components/LabSection';
 import { LabConclusion } from './components/LabConclusion';
@@ -6,10 +7,10 @@ import { SingleDownloadButton } from '../../components/layout/SingleDownloadButt
 import { pageId as SQLRoutes } from '../../routes/SQL';
 import { darkTheme } from '../../constants/colors';
 import { classTitles } from './data/courseData';
-import lab08Data from './data/lab08Data';
-import imageData from './data/imageData';
-import { ImageContainer } from '../../components/layout/ImageContainer';
 import { makeTransparent } from '../../utils/colorUtils';
+
+import imageData from './data/imageData';
+import lab08Data from './data/lab08Data';
 
 export const SQL_Lab08 = () => {
   const pageData = {

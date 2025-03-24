@@ -2,7 +2,11 @@ import styles from './Page.module.css';
 import { useRouteError } from 'react-router-dom';
 
 export const ErrorPage = () => {
-  const error = useRouteError() as { status?: number; statusText?: string; message?: string };
+  const error = useRouteError() as {
+    status?: number;
+    statusText?: string;
+    message?: string;
+  };
   console.error(error);
 
   return (

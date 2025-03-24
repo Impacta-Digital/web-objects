@@ -55,8 +55,8 @@ function LabAdvanced03() {
       <h2>Laboratório 2 – Gráfico de Velocímetro</h2>
 
       <p>
-        No mesmo arquivo,<strong>Exercícios de Laboratório - Aula 3.xlsx</strong>, adicione outra planilha e siga as
-        orientações adiante:
+        No mesmo arquivo,
+        <strong>Exercícios de Laboratório - Aula 3.xlsx</strong>, adicione outra planilha e siga as orientações adiante:
       </p>
 
       <p className='--paddingLeft'>

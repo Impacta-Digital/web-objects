@@ -12,13 +12,16 @@ export const SQL_IntroPage = () => {
   const pageData = {
     classTitle: classTitles.intro,
     course: courseTitle,
-    images: imageData.IntroPage,
+    images: imageData.introPage,
     multipleDownloads: [
       {
         buttonText: 'Microsoft SSMS 2022',
         hyperlink: 'https://www.microsoft.com/pt-br/sql-server/sql-server-downloads',
       },
-      { buttonText: 'Banco de Dados "PEDIDOS"', filePath: '/downloads/SQL/PEDIDOS.zip' },
+      {
+        buttonText: 'Banco de Dados "PEDIDOS"',
+        filePath: '/downloads/SQL/PEDIDOS.zip',
+      },
     ],
   };
 
@@ -224,7 +227,13 @@ export const SQL_IntroPage = () => {
           trabalhar com ele.
         </p>
 
-        <h1 style={{ color: darkTheme.accents.secondary, textTransform: 'uppercase', textAlign: 'center' }}>
+        <h1
+          style={{
+            color: darkTheme.accents.secondary,
+            textTransform: 'uppercase',
+            textAlign: 'center',
+          }}
+        >
           Bom curso!
         </h1>
 

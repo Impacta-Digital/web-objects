@@ -138,7 +138,8 @@ function LabAdvanced02() {
       </p>
       <p className='--paddingLeft'>
         8. Na planilha <strong>Painel</strong>, selecione a célula mesclada <strong>E7</strong>. Copie-a e cole-a sobre
-        ela mesma, porém como imagem vinculada. Na barra de fórmulas, edite a referência<strong> =$E$7</strong> para
+        ela mesma, porém como imagem vinculada. Na barra de fórmulas, edite a referência
+        <strong> =$E$7</strong> para
         <strong> =Imagem</strong>, a qual representa o nome do intervalo criado no passo anterior e tecle ENTER. A
         imagem do produto já deverá aparecer;
       </p>

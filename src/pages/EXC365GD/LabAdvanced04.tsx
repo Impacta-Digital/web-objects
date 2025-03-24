@@ -108,9 +108,9 @@ function LabAdvanced04() {
       </p>
       <p className='--paddingLeft --bulleted'>
         <strong>Status</strong>: Esse campo determina o status do chamado: <strong>Aberto</strong> (não há data de
-        fechamento), <strong></strong>Fechado (há data de fechamento, posterior à data de abertura),{' '}
-        <strong>Erro</strong> (momento do fechamento registrado como sendo anterior ao de abertura) ou{' '}
-        <strong>Crítico</strong> (o tempo de resolução passou de 24 horas);
+        fechamento), <strong>Fechado</strong>
+        (há data de fechamento, posterior à data de abertura), <strong>Erro</strong> (momento do fechamento registrado
+        como sendo anterior ao de abertura) ou <strong>Crítico</strong> (o tempo de resolução passou de 24 horas);
       </p>
       <p className='--paddingLeft --bulleted'>
         <strong>Atendente</strong>: Nome do(a) atendente responsável pelo chamado;
@@ -248,8 +248,9 @@ function LabAdvanced04() {
       </h3>
 
       <p className='--paddingLeft'>
-        1. Vá até a coluna <strong></strong>AB da planilha <strong></strong>Dashboard. Essa área será reservada para os
-        valores de suporte para as caixas de combinação, fórmulas e montagem do gráfico do velocímetro mais adiante;
+        1. Vá até a coluna <strong></strong>AB da planilha <strong></strong>
+        Dashboard. Essa área será reservada para os valores de suporte para as caixas de combinação, fórmulas e montagem
+        do gráfico do velocímetro mais adiante;
       </p>
       <p className='--paddingLeft'>
         2. Digite e formate as seguintes informações (conteúdo, fonte, alinhamento, borda e preenchimento):

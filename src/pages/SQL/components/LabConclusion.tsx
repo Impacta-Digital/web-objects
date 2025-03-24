@@ -6,7 +6,13 @@ export const LabConclusion = () => {
       <p style={{ textAlign: 'center', fontSize: '1.4rem', marginBottom: 0 }}>
         Parabéns! Você finalizou esta atividade.
       </p>
-      <h1 style={{ color: darkTheme.accents.secondary, textTransform: 'uppercase', textAlign: 'center' }}>
+      <h1
+        style={{
+          color: darkTheme.accents.secondary,
+          textTransform: 'uppercase',
+          textAlign: 'center',
+        }}
+      >
         Até a próxima!
       </h1>
 
