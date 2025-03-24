@@ -16,6 +16,7 @@ import Advanced03 from '../pages/EXC365GD/LabAdvanced03';
 import Advanced04 from '../pages/EXC365GD/LabAdvanced04';
 
 import { pageId as SQL } from './SQL';
+import { pageIdAlt as SQL_Alt } from './SQL';
 import { courseTitle } from '../pages/SQL/data/courseData';
 import { SQL_IntroPage } from '../pages/SQL/IntroPage';
 import { SQL_Lab02 } from '../pages/SQL/Lab02';
@@ -29,6 +30,8 @@ import { SQL_Lab12 } from '../pages/SQL/Lab12';
 import { SQL_Lab13 } from '../pages/SQL/Lab13';
 import { SQL_Lab14 } from '../pages/SQL/Lab14';
 import { SQL_Lab15 } from '../pages/SQL/Lab15';
+import { SQL_AltLab11 } from '../pages/SQL/AltLab11';
+import { SQL_AltLab12 } from '../pages/SQL/AltLab12';
 
 const router = createBrowserRouter([
   {
@@ -75,6 +78,8 @@ const router = createBrowserRouter([
           { path: SQL[13], element: <SQL_Lab13 /> },
           { path: SQL[14], element: <SQL_Lab14 /> },
           { path: SQL[15], element: <SQL_Lab15 /> },
+          { path: SQL_Alt[11], element: <SQL_AltLab11 /> },
+          { path: SQL_Alt[12], element: <SQL_AltLab12 /> },
         ],
       },
     ],

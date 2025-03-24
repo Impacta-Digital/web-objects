@@ -17,3 +17,8 @@ export const pageId = {
   14: '207f9ae3-088d-41f0-993b-f8b84c7d20cb',
   15: 'ad38fa1c-d316-4050-8484-33c673a75470',
 } as const;
+
+export const pageIdAlt = {
+  11: 'a87671ee-decc-4682-a76d-73eb017dbcb3',
+  12: '75df1779-12d8-45fa-98ec-1bf3273432fa',
+};

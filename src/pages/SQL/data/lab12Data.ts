@@ -161,7 +161,7 @@ const lab12B_5: LabSections = [
   },
   {
     sectionType: 'paragraph',
-    content: 'Use a tabela __TBEMP_CLI__ para realizar os exercícios abaixo.',
+    content: 'Use a tabela __TBEMP_CLI__ para realizar o exercício abaixo.',
   },
   {
     sectionType: 'response',

@@ -12,7 +12,7 @@ export const classTitles = {
   8: 'Associação de Tabelas',
   9: 'Agrupamento de Dados',
   10: 'Subquery ou Subconsulta',
-  // 11: 'Instrução Update - Atualizar Dados',
+  11: 'Instrução Update - Atualizar Dados',
   12: 'Instrução Delete - Excluir Dados',
   13: 'Tipos de Dados Definidos Pelo Usuário',
   14: 'Operadores de Conjuntos e Instruções',
