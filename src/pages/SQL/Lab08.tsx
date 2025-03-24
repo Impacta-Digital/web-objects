@@ -7,10 +7,14 @@ import { pageId as SQLRoutes } from '../../routes/SQL';
 import { darkTheme } from '../../constants/colors';
 import { classTitles } from './data/courseData';
 import lab08Data from './data/lab08Data';
+import imageData from './data/imageData';
+import { ImageContainer } from '../../components/layout/ImageContainer';
+import { makeTransparent } from '../../utils/colorUtils';
 
 export const SQL_Lab08 = () => {
   const pageData = {
     classTitle: classTitles[8],
+    image: imageData.lab08,
     labData: lab08Data,
   };
 
@@ -39,10 +43,17 @@ export const SQL_Lab08 = () => {
         />
       </div>
 
-      <p>
-        Dentro do pacote zip você encontrará uma imagem com o &quot;Modelo Relacional do banco de dados PEDIDOS&quot;
-        para consulta.
-      </p>
+      <div className='wrapper'>
+        <p>
+          Dentro do pacote zip você encontrará uma imagem com o Modelo Relacional do banco de dados{' '}
+          <strong>PEDIDOS</strong> para consulta: <i className='highlight'>modelo_banco_PEDIDOS.jpg</i>
+        </p>
+
+        <ImageContainer
+          src={pageData.image}
+          imgStyle={{ border: `0.5rem solid ${makeTransparent(darkTheme.accents.primary, 75)}` }}
+        />
+      </div>
 
       {pageData.labData.map((sections, index) => (
         <LabSection key={`section-${index}`} {...{ sections }} />

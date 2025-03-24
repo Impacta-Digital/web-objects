@@ -10,7 +10,7 @@ import lab02Data from './data/lab02Data';
 export const SQL_Lab02 = () => {
   const pageData = {
     classTitle: classTitles[2],
-    images: imageData.Class02,
+    image: imageData.lab02,
     labData: lab02Data,
   };
 
@@ -24,7 +24,7 @@ export const SQL_Lab02 = () => {
         </p>
 
         <ImageContainer
-          src={pageData.images[0]}
+          src={pageData.image}
           alt='Imagem 1: Modelo Entidade-Relacionamento (MER) para um banco de dados de Aluno-Disciplina, ilustrando os relacionamentos entre as tabelas ALUNO, DISCIPLINA e CARGO.'
         />
       </div>
