@@ -4,82 +4,79 @@
 [![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/-Vite-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 
-**Web Objects** is a curated collection of interactive web components and practical examples built using React, TypeScript, and Vite. This project serves as a dynamic showcase of modern web development techniques, with a strong emphasis on data visualization and interactive learning experiences, particularly in the realms of Excel and SQL.
+**Web Objects** é uma coleção curada de componentes web interativos e exemplos práticos construídos com React, TypeScript e Vite. Este projeto serve como uma vitrine dinâmica de técnicas modernas de desenvolvimento web, com ênfase em visualização de dados e experiências de aprendizagem interativas, especialmente nas áreas de Excel e SQL.
 
-## Content Focus
+## Foco do Conteúdo
 
-This project is designed to provide hands-on learning and reusable components for the following areas:
+Este projeto foi projetado para fornecer aprendizagem prática e componentes reutilizáveis nas seguintes áreas:
 
-*   **Excel Data Visualization:** Explore interactive demonstrations and tools for creating compelling data visualizations from Excel data. Discover practical examples related to Excel 365, advanced charting techniques, and dynamic dashboard creation.
-*   **SQL Data Interaction:** Learn how to seamlessly interact with SQL databases and present data in engaging ways. Find components and examples for data querying, filtering, and real-time updates.
+- **Visualização de Dados no Excel:** Explore demonstrações interativas e ferramentas para criar visualizações de dados impactantes a partir de dados do Excel. Descubra exemplos práticos relacionados ao Excel 365, técnicas avançadas de gráficos e criação de dashboards dinâmicos.
+- **Interação com Dados SQL:** Aprenda a interagir de forma transparente com bancos de dados SQL e apresentar dados de maneira envolvente. Encontre componentes e exemplos para consulta, filtragem e atualização de dados em tempo real.
 
-## Key Features
+## Principais Recursos
 
-*   **Modular React Components:** Build upon a foundation of reusable React components, designed for flexibility and easy integration into your projects.
-*   **TypeScript Powered:** Benefit from enhanced code quality, maintainability, and type safety with TypeScript.
-*   **Lightning-Fast Vite Development:** Experience rapid development cycles and optimized production builds with Vite.
-*   **Seamless Client-Side Routing:** Navigate effortlessly through the application with React Router DOM.
-*   **Immersive Full-Screen Mode:** Enable a distraction-free viewing experience with React Full Screen.
-*   **Syntax-Highlighted Code Snippets:** Display code examples with clarity and style using React Syntax Highlighter.
-*   **Browser Detection:** Adapt the user experience based on the user's browser using Bowser.
-*   **Code Quality Assurance:** Maintain consistent code style and prevent errors with ESLint and Prettier.
+- **Componentes React Modulares:** Construa sobre uma base de componentes React reutilizáveis, projetados para flexibilidade e fácil integração em seus projetos.
+- **Desenvolvido em TypeScript:** Beneficie-se da maior qualidade de código, manutenibilidade e segurança de tipos com TypeScript.
+- **Desenvolvimento Rápido com Vite:** Experimente ciclos de desenvolvimento rápidos e builds de produção otimizados com Vite.
+- **Roteamento Cliente-Side Transparente:** Navegue facilmente pela aplicação com React Router DOM.
+- **Modo Tela Cheia Imersivo:** Habilite uma experiência de visualização sem distrações com React Full Screen.
+- **Trechos de Código com Syntax Highlight:** Exiba exemplos de código com clareza e estilo usando React Syntax Highlighter.
+- **Detecção de Navegador:** Adapte a experiência do usuário baseando-se no navegador utilizando Bowser.
+- **Garantia de Qualidade de Código:** Mantenha um estilo de código consistente e previna erros com ESLint e Prettier.
 
-## Getting Started
+## Primeiros Passos
 
-1.  **Clone the Repository:**
+1. **Clone o Repositório:**
 
-    ```bash
-    git clone <your-repository-url>
-    cd web-objects
-    ```
+   ```bash
+   git clone https://github.com/Impacta-Digital/web-objects.git
+   cd web-objects
+   ```
 
-2.  **Install Dependencies:**
+2. **Instale as Dependências:**
 
-    ```bash
-    npm install  # or yarn install
-    ```
+   ```bash
+   npm install  # ou yarn install
+   ```
 
-3.  **Start the Development Server:**
+3. **Inicie o Servidor de Desenvolvimento:**
 
-    ```bash
-    npm run dev # or yarn dev
-    ```
+   ```bash
+   npm run dev # ou yarn dev
+   ```
 
-    This will launch the application in development mode, typically accessible at `http://localhost:5173/`.
+   Isso iniciará a aplicação em modo de desenvolvimento, normalmente acessível em `http://localhost:5173/`.
 
-4.  **Build for Production:**
+4. **Construa para Produção:**
 
-    ```bash
-    npm run build # or yarn build
-    ```
+   ```bash
+   npm run build # ou yarn build
+   ```
 
-    This command will create a production-ready build of the application in the `dist` directory.
+   Este comando criará uma build de produção da aplicação no diretório `dist`.
 
-5.  **Preview Production Build:**
+5. **Visualize a Build de Produção:**
 
-    ```bash
-    npm run preview # or yarn preview
-    ```
+   ```bash
+   npm run preview # ou yarn preview
+   ```
 
-    This command will start a local server to preview the generated production build.
+   Este comando iniciará um servidor local para pré-visualizar a build de produção gerada.
 
-## Available Scripts
+## Scripts Disponíveis
 
-*   `dev`: Starts the Vite development server for local development.
-*   `check`: Performs type checking and ESLint analysis.
-*   `build`: Builds the application for production deployment.
-*   `preview`: Starts a local server to preview the production build.
-*   `lint`: Lints the code using ESLint and Prettier.
-*   `format`: Formats the code using Prettier.
+- `dev`: Inicia o servidor de desenvolvimento Vite
+- `build`: Constrói a aplicação para produção
+- `preview`: Inicia um servidor local para pré-visualizar
 
-## Technologies Used
+## Tecnologias Utilizadas
 
-*   **React:** A declarative JavaScript library for building user interfaces. ([https://reactjs.org/](https://reactjs.org/))
-*   **TypeScript:** A typed superset of JavaScript that compiles to plain JavaScript. ([https://www.typescriptlang.org/](https://www.typescriptlang.org/))
-*   **Vite:** A fast build tool that significantly improves the front-end development experience. ([https://vitejs.dev/](https://vitejs.dev/))
-*   **React Router DOM:** A library for adding dynamic, client-side routing to React applications. ([https://reactrouter.com/](https://reactrouter.com/))
-*   **React Full Screen:** A React component for handling full-screen mode.
-*   **React Syntax Highlighter:** A component for displaying syntax-highlighted code snippets. ([https://github.com/react-syntax-highlighter/react-syntax-highlighter](https://github.com/react-syntax-highlighter/react-syntax-highlighter))
-*   **Bowser:** A browser detection library. ([https://github.com/lancedikson/bowser](https://github.com/lancedikson/bowser))
-*   **ESLint:** A tool for identifying and reporting on patterns found in ECMAScript/JavaScript code. ([https://eslint.org/](https://eslint.org/))
-*   **Prettier:** An opinionated code formatter. ([https://prettier.io/](https://prettier.io/))
+- **React:** Uma biblioteca JavaScript declarativa para construir interfaces de usuário. ([https://reactjs.org/](https://reactjs.org/))
+- **TypeScript:** Um superset tipado de JavaScript que compila para JavaScript puro. ([https://www.typescriptlang.org/](https://www.typescriptlang.org/))
+- **Vite:** Uma ferramenta de build rápida que melhora significativamente a experiência de desenvolvimento front-end. ([https://vitejs.dev/](https://vitejs.dev/))
+- **React Router DOM:** Uma biblioteca para adicionar roteamento dinâmico do lado do cliente a aplicações React. ([https://reactrouter.com/](https://reactrouter.com/))
+- **React Full Screen:** Um componente React para lidar com o modo de tela cheia. ([https://github.com/snakesilk/react-fullscreen](https://github.com/snakesilk/react-fullscreen))
+- **React Syntax Highlighter:** Um componente para exibir trechos de código com destaque de sintaxe. ([https://github.com/react-syntax-highlighter/react-syntax-highlighter](https://github.com/react-syntax-highlighter/react-syntax-highlighter))
+- **Bowser:** Uma biblioteca de detecção de navegador. ([https://github.com/lancedikson/bowser](https://github.com/lancedikson/bowser))
+- **ESLint:** Uma ferramenta para identificar e relatar padrões encontrados no código ECMAScript/JavaScript. ([https://eslint.org/](https://eslint.org/))
+- **Prettier:** Um formatador de código opinativo. ([https://prettier.io/](https://prettier.io/))
