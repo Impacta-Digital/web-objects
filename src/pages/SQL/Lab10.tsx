@@ -7,7 +7,7 @@ import { SingleDownloadButton } from '../../components/layout/SingleDownloadButt
 import { pageId as SQLRoutes } from '../../routes/SQL';
 import { darkTheme } from '../../constants/colors';
 import { classTitles } from './data/courseData';
-import { makeTransparent } from '../../utils/colorUtils';
+import { makeTransparent } from '../../utils/color.utils';
 
 import imageData from './data/imageData';
 import lab10Data from './data/lab10Data';

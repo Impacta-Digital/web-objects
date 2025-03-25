@@ -1,5 +1,5 @@
 import styles from './ColorBox.module.css';
-import { makeTransparent } from '../../utils/colorUtils';
+import { makeTransparent } from '../../utils/color.utils';
 
 export interface ColorBoxProps {
   color: string;
