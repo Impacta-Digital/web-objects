@@ -40,7 +40,7 @@ export const SQL_Lab12 = () => {
         />
       </div>
 
-      <h1 style={{ color: darkTheme.accents.primary, borderBottom: '2px solid' }}>
+      <h1 style={{ color: darkTheme.accent.primary, borderBottom: '2px solid' }}>
         LABORATÓRIO 1: <strong>UPDATE</strong>
       </h1>
 
@@ -48,7 +48,7 @@ export const SQL_Lab12 = () => {
         <LabSection key={`lab1-section${sectionsIndex}`} {...{ sections }} />
       ))}
 
-      <h1 style={{ color: darkTheme.accents.primary, borderBottom: '2px solid' }}>
+      <h1 style={{ color: darkTheme.accent.primary, borderBottom: '2px solid' }}>
         LABORATÓRIO 2: <strong>DELETE</strong>
       </h1>
 

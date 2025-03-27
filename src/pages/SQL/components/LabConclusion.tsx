@@ -8,7 +8,7 @@ export const LabConclusion = () => {
       </p>
       <h1
         style={{
-          color: darkTheme.accents.secondary,
+          color: darkTheme.accent.secondary,
           textTransform: 'uppercase',
           textAlign: 'center',
         }}

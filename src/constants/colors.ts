@@ -20,7 +20,7 @@ export const darkTheme = {
   background: colors.midnightBlack,
   foreground: colors.cloudWhite,
   secondaryText: colors.sageTeal,
-  accents: {
+  accent: {
     primary: colors.azureBlue,
     secondary: colors.turquoise,
   },
@@ -36,7 +36,7 @@ export const lightTheme = {
   background: colors.polarWhite,
   foreground: colors.graphiteGray,
   secondaryText: colors.slateMoss,
-  accents: {
+  accent: {
     primary: colors.deepAzure,
     secondary: colors.forestTeal,
   },

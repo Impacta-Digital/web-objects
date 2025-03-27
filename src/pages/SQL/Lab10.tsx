@@ -54,7 +54,7 @@ export const SQL_Lab10 = () => {
 
         <ImageContainer
           src={pageData.image}
-          imgStyle={{ border: `0.5rem solid ${makeTransparent(darkTheme.accents.primary, 75)}` }}
+          imgStyle={{ border: `0.5rem solid ${makeTransparent(darkTheme.accent.primary, 75)}` }}
         />
       </div>
 

@@ -36,7 +36,7 @@ export const SQL_IntroPage = () => {
         <TitleAndDivider
           title={pageData.course}
           subheading='Como anexar o Banco de Dados'
-          borderColor={darkTheme.accents.primary}
+          borderColor={darkTheme.accent.primary}
         />
 
         <p>
@@ -229,7 +229,7 @@ export const SQL_IntroPage = () => {
 
         <h1
           style={{
-            color: darkTheme.accents.secondary,
+            color: darkTheme.accent.secondary,
             textTransform: 'uppercase',
             textAlign: 'center',
           }}
