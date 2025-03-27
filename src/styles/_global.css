@@ -277,10 +277,6 @@ img {
   a:hover {
     color: unset;
   }
-
-  a:focus {
-    outline: 2px solid var(--accentSecondary);
-  }
 }
 
 /* mobile */
