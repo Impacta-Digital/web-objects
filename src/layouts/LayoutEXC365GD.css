@@ -42,14 +42,6 @@
   font-family: var(--default-font);
 }
 
-.exc365GD-body .layoutButtonsContainer {
-  display: flex;
-  gap: 0.75rem;
-  top: 1rem;
-  position: absolute;
-  right: 1rem;
-}
-
 .exc365GD-body h1 {
   color: var(--theme);
 }
@@ -80,11 +72,5 @@
 @media (hover: hover) and (pointer: fine) {
   .exc365GD-body .button:hover {
     background: var(--blue-gray--light20);
-  }
-}
-
-@media (max-width: 767px) {
-  .exc365GD-body .layoutButtonsContainer {
-    top: 2.5rem;
   }
 }
