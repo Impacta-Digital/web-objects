@@ -44,7 +44,7 @@ export const SQL_Lab06A = () => {
         <>
           <h1
             style={{
-              color: darkTheme.accents.primary,
+              color: darkTheme.accent.primary,
               borderBottom: '2px solid',
             }}
           >

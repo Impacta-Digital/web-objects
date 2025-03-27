@@ -24,18 +24,15 @@
 
   /* - - - - - color variations */
   --theme--dark20: #9cbc18;
-  --theme--light40: #dbf378;
   --theme--opacity40: #c3eb1e66;
 
   --blue-gray--dark20: #4e5b83;
-  --blue-gray--light20: #818eb6;
   --blue-gray--opacity30: #6273a44d;
 }
 
 /* - - - - - 📌 SETUP */
 
-.exc365GD-body,
-.exc365GD-body .fullscreen {
+.exc365GD-body {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -43,19 +40,6 @@
   background: var(--dark);
   color: var(--light);
   font-family: var(--default-font);
-}
-.exc365GD-body.--light-mode,
-.exc365GD-body .fullscreen.--light-mode {
-  background: var(--light);
-  color: var(--dark);
-}
-
-.exc365GD-body .layoutButtonsContainer {
-  display: flex;
-  gap: 0.75rem;
-  top: 1rem;
-  position: absolute;
-  right: 1rem;
 }
 
 .exc365GD-body h1 {
@@ -88,11 +72,5 @@
 @media (hover: hover) and (pointer: fine) {
   .exc365GD-body .button:hover {
     background: var(--blue-gray--light20);
-  }
-}
-
-@media (max-width: 767px) {
-  .exc365GD-body .layoutButtonsContainer {
-    top: 2.5rem;
   }
 }

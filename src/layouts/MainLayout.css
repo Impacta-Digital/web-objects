@@ -5,13 +5,6 @@ h2 {
   border-bottom-color: var(--accentSecondary);
 }
 
-.floatingButtonContainer {
-  display: flex;
-  justify-content: right;
-  padding-bottom: 1rem;
-  position: sticky;
-}
-
 .button {
   color: var(--fg);
   background: var(--accentPrimaryDeep);

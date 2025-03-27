@@ -4,7 +4,7 @@ import { MainLayout } from '../layouts/MainLayout';
 import { ErrorPage } from '../pages/ErrorPage';
 import { HomePage } from '../pages/HomePage';
 
-import { LayoutEXC365GD } from '../layouts/EXC365GD/LayoutEXC365GD';
+import { LayoutEXC365GD } from '../layouts/LayoutEXC365GD';
 import { pageId as EXC365GD } from './EXC365GD';
 
 import Basic02 from '../pages/EXC365GD/LabBasic02';
