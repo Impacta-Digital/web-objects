@@ -14,7 +14,7 @@ export const colors = {
   sageTeal: '#96B1AC',
   slateMoss: '#546360',
   turquoise: '#40E0D0',
-};
+} as const;
 
 export const darkTheme = {
   background: colors.midnightBlack,
@@ -30,7 +30,7 @@ export const darkTheme = {
     info: colors.amberYellow,
     success: colors.emeraldGreen,
   },
-};
+} as const;
 
 export const lightTheme = {
   background: colors.polarWhite,
@@ -46,4 +46,6 @@ export const lightTheme = {
     info: colors.amberYellow,
     success: colors.pineGreen,
   },
-};
+} as const;
+
+export default colors;

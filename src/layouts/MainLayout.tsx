@@ -16,7 +16,9 @@ export const MainLayout = (props: MainLayoutProps) => {
   return (
     <div className='layoutContainer'>
       <div className='fullWrapper'>
-        <div className='layoutButtonContainer'>{iframeUrl && <RedirectButton iframeUrl={iframeUrl} />}</div>
+        <div className='layoutButtonContainer'>
+          {iframeUrl && <RedirectButton iframeUrl={iframeUrl} layoutType='main' />}
+        </div>
         <Outlet />
       </div>
       <PageFooter title={props.footerTitle} />

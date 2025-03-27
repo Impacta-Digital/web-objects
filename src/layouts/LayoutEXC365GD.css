@@ -23,11 +23,14 @@
   --cyan: #8be9fd;
 
   /* - - - - - color variations */
-  --theme--dark20: #9cbc18;
   --theme--opacity40: #c3eb1e66;
 
-  --blue-gray--dark20: #4e5b83;
+  --blue-gray--light20: #818eb6;
   --blue-gray--opacity30: #6273a44d;
+
+  /* - - - - - + */
+  --tooltipBg: var(--blue-gray--light20);
+  --tooltipText: var(--light);
 }
 
 /* - - - - - 📌 SETUP */

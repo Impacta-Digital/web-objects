@@ -31,6 +31,9 @@
   --alertInfo: var(--amberYellow);
   --alertSuccess: var(--emeraldGreen);
 
+  --tooltipBg: var(--accentPrimary);
+  --tooltipText: var(--fg);
+
   --higlightBg: color-mix(in srgb, var(--amberYellow) 25%, transparent);
 
   --soft-shadow: 2px 2px 2px #0000004d;

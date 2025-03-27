@@ -1,12 +1,17 @@
 import { Tooltip } from 'react-tooltip';
 import { IconNewTab } from '../icons/NewTab';
-import { darkTheme } from '../../constants/colors';
+import { darkTheme as mainColors } from '../../constants/colors';
+import { darkTheme as EXC365Colors } from '../../constants/EXC365GDcolors';
 
-export const RedirectButton = ({ iframeUrl }: { iframeUrl: string }) => {
+type LayoutType = 'main' | 'EXC365';
+
+export const RedirectButton = ({ iframeUrl, layoutType }: { iframeUrl: string; layoutType: LayoutType }) => {
   const openNewTab = (e: React.MouseEvent) => {
     e.preventDefault();
     window.open(iframeUrl, '_blank', 'noopener,noreferrer');
   };
+
+  const colors = layoutType === 'EXC365' ? EXC365Colors : mainColors;
 
   return (
     <>
@@ -15,8 +20,8 @@ export const RedirectButton = ({ iframeUrl }: { iframeUrl: string }) => {
         place='left'
         offset={15}
         style={{
-          backgroundColor: darkTheme.accent.primary,
-          color: darkTheme.foreground,
+          backgroundColor: colors.accent.primary,
+          color: colors.foreground,
           padding: '0.25rem 0.75rem 0.25rem 0.5rem',
           borderRadius: 0,
         }}

@@ -23,7 +23,9 @@ export const LayoutEXC365GD = () => {
     <div className='exc365GD-body'>
       <div className='layoutContainer'>
         <div className='fullWrapper'>
-          <div className='layoutButtonContainer'>{iframeUrl && <RedirectButton iframeUrl={iframeUrl} />}</div>
+          <div className='layoutButtonContainer'>
+            {iframeUrl && <RedirectButton iframeUrl={iframeUrl} layoutType='EXC365' />}
+          </div>
           <Outlet />
         </div>
         <PageFooter title={footerTitle} />
